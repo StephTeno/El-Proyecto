@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\MODELO\\MODELO.csproj",
+      "projectUniqueName": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
       "projectName": "MODELO",
-      "projectPath": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\MODELO\\MODELO.csproj",
+      "projectPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
       "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\MODELO\\obj\\",
+      "outputPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\MODELO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",

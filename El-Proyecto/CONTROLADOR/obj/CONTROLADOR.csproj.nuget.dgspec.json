@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {}
+    "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {
+    "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+        "projectUniqueName": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
         "projectName": "CONTROLADOR",
-        "projectPath": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+        "projectPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
         "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steph\\OneDrive\\Escritorio\\Repo\\El-Proyecto\\CONTROLADOR\\obj\\",
+        "outputPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,5 +6,10 @@ namespace ElProyecto
         {
             InitializeComponent();
         }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 }
