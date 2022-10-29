@@ -16,3 +16,4 @@ C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.pdb
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.genruntimeconfig.cache
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ref\ElProyecto.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.Progreso.resources

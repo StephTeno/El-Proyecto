@@ -42,22 +42,22 @@
             treeNode7,
             treeNode8});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Lista = new System.Windows.Forms.TreeView();
+            this.tvLista = new System.Windows.Forms.TreeView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Lista
+            // tvLista
             // 
-            this.Lista.BackColor = System.Drawing.Color.White;
-            this.Lista.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lista.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lista.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Lista.LineColor = System.Drawing.Color.White;
-            this.Lista.Location = new System.Drawing.Point(-5, 122);
-            this.Lista.Name = "Lista";
+            this.tvLista.BackColor = System.Drawing.Color.White;
+            this.tvLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tvLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tvLista.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tvLista.LineColor = System.Drawing.Color.White;
+            this.tvLista.Location = new System.Drawing.Point(-5, 122);
+            this.tvLista.Name = "tvLista";
             treeNode1.Name = "Inicio";
             treeNode1.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             treeNode1.Text = "Inicio";
@@ -94,15 +94,15 @@
             treeNode9.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             treeNode9.Text = "Ver los Donantes";
             treeNode9.ToolTipText = "Lista de todos los donantes";
-            this.Lista.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            this.tvLista.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
             treeNode4,
             treeNode5,
             treeNode6,
             treeNode9});
-            this.Lista.Size = new System.Drawing.Size(155, 263);
-            this.Lista.TabIndex = 0;
-            this.Lista.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.tvLista.Size = new System.Drawing.Size(155, 263);
+            this.tvLista.TabIndex = 0;
+            this.tvLista.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // pictureBox1
             // 
@@ -130,10 +130,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(761, 380);
-            this.Controls.Add(this.Lista);
+            this.Controls.Add(this.tvLista);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banco de Sangre Por Más Vidas";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -143,7 +144,7 @@
 
         #endregion
 
-        private TreeView Lista;
+        private TreeView tvLista;
         private PictureBox pictureBox1;
         private Panel panel1;
     }
