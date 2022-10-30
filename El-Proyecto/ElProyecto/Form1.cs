@@ -10,8 +10,6 @@ namespace ElProyecto
             i = 0;
             plInicio.Visible = true;
         }
-
-
         public static bool ProgressBar()
         {bool si = false;
             Progreso prog = new Progreso();
@@ -46,7 +44,6 @@ namespace ElProyecto
                     break;
             }
         }
-
         private void tmrFotos_Tick(object sender, EventArgs e){i++;if (i > 5) { i = 0; }lblFotos.ImageIndex = i;}
         public void Inicio()
         {
@@ -85,18 +82,15 @@ namespace ElProyecto
             DialogResult r = MessageBox.Show("¿Esta seguro de salir?", "Por Más Vida", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (r==DialogResult.Yes)this.Close();
         }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e) { }
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
-        private void lblFotos_Click(object sender, EventArgs e) { }
-
         private void btnSalirOficial_Click(object sender, EventArgs e)
         {
             Salir();
         }
 
         private void lblCed_Click(object sender, EventArgs e) { }
-
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e) { }
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
+        private void lblFotos_Click(object sender, EventArgs e) { }
         private void txtCed_TextChanged(object sender, EventArgs e) { }
     }
 }
