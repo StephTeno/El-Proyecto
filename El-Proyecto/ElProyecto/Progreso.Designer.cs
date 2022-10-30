@@ -58,6 +58,7 @@
             // btnContinuar
             // 
             this.btnContinuar.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnContinuar.DialogResult = System.Windows.Forms.DialogResult.Continue;
             this.btnContinuar.FlatAppearance.BorderSize = 0;
             this.btnContinuar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnContinuar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;

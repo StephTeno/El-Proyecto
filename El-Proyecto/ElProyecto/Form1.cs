@@ -7,12 +7,25 @@ namespace ElProyecto
             InitializeComponent();
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+
+        public static bool ProgressBar()
+        {
+            bool si = false;
+            Progreso prog = new Progreso();
+            if (prog.ShowDialog() == DialogResult.Continue)
+                return si = true;
+            return si;
+        }
+
+        private void tvLista_AfterSelect(object sender, TreeViewEventArgs e)
         {
             switch ((tvLista.SelectedNode.Text))
             {
                 case "Inicio":
-                    ProgressBar();
+                    bool s=ProgressBar();
+                    if(s)
+                    { label1.Text = "Hola"; }
+
                     break;
                 case "Informacion":
                     break;
@@ -27,11 +40,6 @@ namespace ElProyecto
                 case "VerPorGrupo":
                     break;
             }
-        }
-        public static void ProgressBar()
-        {
-            Progreso prog = new Progreso();
-            prog.ShowDialog();
         }
     }
 }
