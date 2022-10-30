@@ -45,6 +45,7 @@
             this.tvLista = new System.Windows.Forms.TreeView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,6 @@
             // 
             this.tvLista.BackColor = System.Drawing.Color.White;
             this.tvLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tvLista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tvLista.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tvLista.LineColor = System.Drawing.Color.White;
             this.tvLista.Location = new System.Drawing.Point(-5, 122);
@@ -124,14 +124,23 @@
             this.panel1.Size = new System.Drawing.Size(154, 386);
             this.panel1.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Location = new System.Drawing.Point(148, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(613, 386);
+            this.panel2.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(761, 380);
             this.Controls.Add(this.tvLista);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -147,5 +156,6 @@
         private TreeView tvLista;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private Panel panel2;
     }
 }

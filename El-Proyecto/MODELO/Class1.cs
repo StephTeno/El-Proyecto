@@ -22,13 +22,13 @@
     {
         private String grupo;
         private Char rh;
-        public String Grupo { get => grupo;  set => grupo = value; }
+        public String Grupo { get => grupo; set => grupo = value; }
         public Char Rh { get => rh; set => rh = value; }
 
     }
     public class Persona
     {
-        
+
         private Sangre sangre;
         private String nombre;
         private DateTime f_Nac;
@@ -43,7 +43,7 @@
             this.cedula = cedula;
             this.peso = peso;
         }
-        public Persona(){}
+        public Persona() { }
 
         public Sangre Sangre { get => sangre; set => sangre = value; }
         public String Nombre { get => nombre; set => nombre = value; }
@@ -52,7 +52,7 @@
         public double Peso { get => peso; set => peso = value; }
 
     }
-    public class Donante:Persona
+    public class Donante : Persona
     {
         private String cen_Donacion;
 
