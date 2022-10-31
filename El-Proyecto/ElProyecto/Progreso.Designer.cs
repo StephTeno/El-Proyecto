@@ -75,6 +75,7 @@
             // tmPrueba
             // 
             this.tmPrueba.Enabled = true;
+            this.tmPrueba.Interval = 50;
             this.tmPrueba.Tick += new System.EventHandler(this.tmPrueba_Tick);
             // 
             // Progreso
