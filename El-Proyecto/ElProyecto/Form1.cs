@@ -20,7 +20,7 @@ namespace ElProyecto
         private void tvLista_AfterSelect(object sender, TreeViewEventArgs e)
         {
             TreeNode node = tvLista.SelectedNode;
-            switch (node.Text)
+            switch (tvLista.SelectedNode.Text)
             {
                 case "Inicio":
                     Inicio();
@@ -34,6 +34,10 @@ namespace ElProyecto
                     }
                     break;
                 case "Modificar Datos":
+                    if (ProgressBar())
+                    {
+                        ModificarDonantes();
+                    }
                     break;
                 case "Consultar Donante":
                     break;
@@ -48,6 +52,7 @@ namespace ElProyecto
         {
             plInicio.Visible = true;
             plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
             plInicio.Location = new Point(173, 0);
         }
         public void QuienesSomos()
@@ -58,13 +63,18 @@ namespace ElProyecto
         {
             plInicio.Visible = false;
             plRegistrarDonante.Visible = true;
+            plModificarDatos.Visible = false;
             plRegistrarDonante.Size = new Size(588,387);
             plRegistrarDonante.Location= new Point(173, 0);
 
         }
         public void ModificarDonantes()
         {
-            plInicio.Visible = true;
+            plInicio.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = true;
+            plModificarDatos.Size = new Size(588, 387);
+            plModificarDatos.Location = new Point(173, 0);
         }
         public void ConsultarDonantes()
         {
@@ -94,12 +104,7 @@ namespace ElProyecto
         private void lblFotos_Click(object sender, EventArgs e) { }
         private void txtCed_TextChanged(object sender, EventArgs e) { }
         private void Form1_Load(object sender, EventArgs e){lbl_Id.Text = GeneraNumero();}
-
-        private void tpPrincipal_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        private void tpPrincipal_Click(object sender, EventArgs e) { }
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }
