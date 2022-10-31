@@ -78,7 +78,11 @@ namespace ElProyecto
         }
         public void ConsultarDonantes()
         {
-            plInicio.Visible = true;
+            plInicio.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = true;
+            plModificarDatos.Size = new Size(588, 387);
+            plModificarDatos.Location = new Point(173, 0);
         }
         public void VerTodosLosDonantes()
         {
@@ -105,6 +109,8 @@ namespace ElProyecto
         private void txtCed_TextChanged(object sender, EventArgs e) { }
         private void Form1_Load(object sender, EventArgs e){lbl_Id.Text = GeneraNumero();}
         private void tpPrincipal_Click(object sender, EventArgs e) { }
+
+        private void plModificarDatos_Paint(object sender, PaintEventArgs e) { }
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }
