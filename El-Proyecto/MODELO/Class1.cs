@@ -35,10 +35,12 @@
         private DateTime f_Nac;
         private String cedula;
         private double peso;
+        private char sexo;
 
-        public Persona(Sangre sangre, string nombre, string apellido, DateTime f_Nac, string cedula, double peso)
+        public Persona(Sangre sangre, char sexo, string nombre, string apellido, DateTime f_Nac, string cedula, double peso)
         {
             this.sangre = sangre;
+            this.sexo = sexo;
             this.nombre = nombre;
             this.apellido = apellido;
             this.f_Nac = f_Nac;
@@ -53,6 +55,7 @@
         public DateTime F_Nac { get => f_Nac; set => f_Nac = value; }
         public String Cedula { get => cedula; set => cedula = value; }
         public double Peso { get => peso; set => peso = value; }
+        public char Sexo { get => sexo; set => sexo = value; }
 
     }
     public class Donante : Persona
@@ -60,7 +63,7 @@
         private String cen_Donacion;
         private String id_Donante;
 
-        public Donante(string cen_Donacion, string id_Donante, Sangre sangre, string nombre, string apellido, DateTime f_Nac, string cedula, double peso) : base(sangre, nombre, apellido, f_Nac, cedula, peso)
+        public Donante(string cen_Donacion, string id_Donante, Sangre sangre, char sexo, string nombre, string apellido, DateTime f_Nac, string cedula, double peso) : base(sangre, sexo, nombre, apellido, f_Nac, cedula, peso)
         {
             this.cen_Donacion = cen_Donacion;
             this.id_Donante=id_Donante;

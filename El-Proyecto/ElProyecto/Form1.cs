@@ -2,7 +2,7 @@ namespace ElProyecto
 {
     public partial class Form1 : Form
     {
-        private int i;
+        static int i, o;
         public Form1()
         {
             InitializeComponent();
@@ -19,28 +19,27 @@ namespace ElProyecto
         }
         private void tvLista_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            switch ((tvLista.SelectedNode.Text))
+            TreeNode node = tvLista.SelectedNode;
+            switch (node.Text)
             {
                 case "Inicio":
                     Inicio();
-
                     break;
-                case "Informacion":
+                case "Información":
                     break;
-                case "AgregarDonante":
-                    bool s=ProgressBar();
-                    if(s)
+                case "Registrar Donante":
+                    if(ProgressBar())
                     {
                         RegistrarDonante();
                     }
                     break;
-                case "ModificarDatos":
+                case "Modificar Datos":
                     break;
-                case "ConsultarDonante":
+                case "Consultar Donante":
                     break;
-                case "TodosDonantes":
+                case "Donantes":
                     break;
-                case "VerPorGrupo":
+                case "Grupo Sanguineo":
                     break;
             }
         }
@@ -49,7 +48,7 @@ namespace ElProyecto
         {
             plInicio.Visible = true;
             plRegistrarDonante.Visible = false;
-            plInicio.Location = new Point(-1, 0);
+            plInicio.Location = new Point(173, 0);
         }
         public void QuienesSomos()
         {
@@ -59,7 +58,9 @@ namespace ElProyecto
         {
             plInicio.Visible = false;
             plRegistrarDonante.Visible = true;
-            plRegistrarDonante.Location = new Point(-1, 0);
+            plRegistrarDonante.Size = new Size(588,387);
+            plRegistrarDonante.Location= new Point(173, 0);
+
         }
         public void ModificarDonantes()
         {
@@ -92,5 +93,13 @@ namespace ElProyecto
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
         private void lblFotos_Click(object sender, EventArgs e) { }
         private void txtCed_TextChanged(object sender, EventArgs e) { }
+        private void Form1_Load(object sender, EventArgs e){lbl_Id.Text = GeneraNumero();}
+
+        private void tpPrincipal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }
