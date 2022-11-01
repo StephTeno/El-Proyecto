@@ -26,7 +26,8 @@ namespace ElProyecto
                 case "Inicio":
                     Inicio();
                     break;
-                case "Información":
+                case "Quienes Somos":
+                    QuienesSomos();
                     break;
                 case "Registrar Donante":
                     if(ProgressBar())
@@ -64,6 +65,7 @@ namespace ElProyecto
         public void Inicio()
         {
             plInicio.Visible = true;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
@@ -73,15 +75,20 @@ namespace ElProyecto
         public void QuienesSomos()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = true;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible = false;
+            rtextQuienesSomos.SelectionAlignment = HorizontalAlignment.Center;
+            plQuienesSomos.Size = new Size(592, 370);
+            plQuienesSomos.Location = new Point(170, 38);
         }
         public void RegistrarDonante()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = true;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
@@ -94,6 +101,7 @@ namespace ElProyecto
         public void ModificarDonantes()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = true;
             plConsultarDonante.Visible = false;
@@ -105,6 +113,7 @@ namespace ElProyecto
         public void ConsultarDonantes()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = true;
@@ -116,6 +125,7 @@ namespace ElProyecto
         public void VerTodosLosDonantes()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
@@ -127,6 +137,7 @@ namespace ElProyecto
         public void VerLosDonantesGrupo()
         {
             plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
@@ -154,6 +165,12 @@ namespace ElProyecto
         private void tpPrincipal_Click(object sender, EventArgs e) { }
 
         private void plModificarDatos_Paint(object sender, PaintEventArgs e) { }
+
+        private void tsbSalir_Click(object sender, EventArgs e)
+        {
+            Salir();
+        }
+
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }

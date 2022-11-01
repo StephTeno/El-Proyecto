@@ -45,6 +45,10 @@
             treeNode8});
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalirOficial = new System.Windows.Forms.Button();
+            this.tvLista = new System.Windows.Forms.TreeView();
+            this.imglTreeView = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.plVerGrupoSanguineo = new System.Windows.Forms.Panel();
             this.dgvGrupoSanguineo = new System.Windows.Forms.DataGridView();
             this.lblVerGrupoSanguineo = new System.Windows.Forms.Label();
@@ -83,9 +87,6 @@
             this.cmbBuscar = new System.Windows.Forms.ComboBox();
             this.lblBusMod = new System.Windows.Forms.Label();
             this.lblModificar = new System.Windows.Forms.Label();
-            this.btnSalirOficial = new System.Windows.Forms.Button();
-            this.tvLista = new System.Windows.Forms.TreeView();
-            this.imglTreeView = new System.Windows.Forms.ImageList(this.components);
             this.plConsultarDonante = new System.Windows.Forms.Panel();
             this.btnBuscarConsultar = new System.Windows.Forms.Button();
             this.lbResultado = new System.Windows.Forms.ListBox();
@@ -120,7 +121,6 @@
             this.lblCentro = new System.Windows.Forms.Label();
             this.txtCentro = new System.Windows.Forms.TextBox();
             this.lblRegistro = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.plInicio = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnGrupoSanguineo = new System.Windows.Forms.Button();
@@ -135,12 +135,11 @@
             this.imglFoos = new System.Windows.Forms.ImageList(this.components);
             this.lblInicio = new System.Windows.Forms.Label();
             this.tmrFotos = new System.Windows.Forms.Timer(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tsHerramientas = new System.Windows.Forms.ToolStrip();
             this.tsbPrincipal = new System.Windows.Forms.ToolStripSplitButton();
-            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quienesSomosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiInicio = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiQS = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbRegistro = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
@@ -149,9 +148,14 @@
             this.tsbConsultar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbDatos = new System.Windows.Forms.ToolStripSplitButton();
+            this.tsmiTLD = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiPGS = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
+            this.rtextQuienesSomos = new System.Windows.Forms.RichTextBox();
+            this.plQuienesSomos = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plVerGrupoSanguineo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupoSanguineo)).BeginInit();
             this.plVerDonantes.SuspendLayout();
@@ -166,12 +170,12 @@
             this.tcInformacion.SuspendLayout();
             this.tpPersonal.SuspendLayout();
             this.tpPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plInicio.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbBotones.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tsHerramientas.SuspendLayout();
+            this.plQuienesSomos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -193,6 +197,128 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 45);
             this.panel2.TabIndex = 5;
+            // 
+            // btnSalirOficial
+            // 
+            this.btnSalirOficial.BackColor = System.Drawing.Color.White;
+            this.btnSalirOficial.FlatAppearance.BorderSize = 0;
+            this.btnSalirOficial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.btnSalirOficial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnSalirOficial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirOficial.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnSalirOficial.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnSalirOficial.Image = ((System.Drawing.Image)(resources.GetObject("btnSalirOficial.Image")));
+            this.btnSalirOficial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalirOficial.Location = new System.Drawing.Point(6, 342);
+            this.btnSalirOficial.Name = "btnSalirOficial";
+            this.btnSalirOficial.Size = new System.Drawing.Size(144, 45);
+            this.btnSalirOficial.TabIndex = 4;
+            this.btnSalirOficial.Text = "SALIR";
+            this.btnSalirOficial.UseVisualStyleBackColor = false;
+            this.btnSalirOficial.Click += new System.EventHandler(this.btnSalirOficial_Click);
+            // 
+            // tvLista
+            // 
+            this.tvLista.BackColor = System.Drawing.Color.White;
+            this.tvLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tvLista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tvLista.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tvLista.ImageIndex = 0;
+            this.tvLista.ImageList = this.imglTreeView;
+            this.tvLista.LineColor = System.Drawing.Color.White;
+            this.tvLista.Location = new System.Drawing.Point(1, 123);
+            this.tvLista.Name = "tvLista";
+            treeNode1.ImageIndex = 5;
+            treeNode1.Name = "Inicio";
+            treeNode1.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode1.SelectedImageIndex = 5;
+            treeNode1.Text = "Inicio";
+            treeNode1.ToolTipText = "Inicio";
+            treeNode2.ImageIndex = 4;
+            treeNode2.Name = "Informacion";
+            treeNode2.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode2.SelectedImageIndex = 4;
+            treeNode2.Text = "Quienes Somos";
+            treeNode2.ToolTipText = "Información";
+            treeNode3.ImageIndex = 8;
+            treeNode3.Name = "Principal";
+            treeNode3.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode3.SelectedImageIndex = 8;
+            treeNode3.Text = "Página Principal";
+            treeNode3.ToolTipText = "Página Principal (Ver inicio)";
+            treeNode4.ImageIndex = 0;
+            treeNode4.Name = "RegistrarDonante";
+            treeNode4.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode4.SelectedImageIndex = 0;
+            treeNode4.Text = "Registrar Donante";
+            treeNode4.ToolTipText = "Agregar un nuevo donante";
+            treeNode5.ImageIndex = 3;
+            treeNode5.Name = "ModificarDatos";
+            treeNode5.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode5.SelectedImageIndex = 3;
+            treeNode5.Text = "Modificar Datos";
+            treeNode5.ToolTipText = "Modificar datos de un Donante";
+            treeNode6.ImageIndex = 2;
+            treeNode6.Name = "ConsultarDonante";
+            treeNode6.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode6.SelectedImageIndex = 2;
+            treeNode6.Text = "Consultar Donante";
+            treeNode6.ToolTipText = "Encontrar un Donante";
+            treeNode7.ImageIndex = 7;
+            treeNode7.Name = "TodosDonantes";
+            treeNode7.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode7.SelectedImageIndex = 7;
+            treeNode7.Text = "Donantes";
+            treeNode7.ToolTipText = "Ver todos los donantes";
+            treeNode8.ImageIndex = 1;
+            treeNode8.Name = "VerPorGrupo";
+            treeNode8.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode8.SelectedImageIndex = 1;
+            treeNode8.Text = "Grupo Sanguineo";
+            treeNode8.ToolTipText = "Ver los donantes por grupo sanguineo";
+            treeNode9.ImageIndex = 8;
+            treeNode9.Name = "VerDonantes";
+            treeNode9.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode9.SelectedImageIndex = 8;
+            treeNode9.Text = "Ver los Donantes";
+            treeNode9.ToolTipText = "Lista de todos los donantes";
+            this.tvLista.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode9});
+            this.tvLista.SelectedImageIndex = 0;
+            this.tvLista.ShowNodeToolTips = true;
+            this.tvLista.Size = new System.Drawing.Size(166, 168);
+            this.tvLista.TabIndex = 3;
+            this.tvLista.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvLista_AfterSelect);
+            // 
+            // imglTreeView
+            // 
+            this.imglTreeView.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imglTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglTreeView.ImageStream")));
+            this.imglTreeView.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglTreeView.Images.SetKeyName(0, "Agregar.png");
+            this.imglTreeView.Images.SetKeyName(1, "BaseDatos.png");
+            this.imglTreeView.Images.SetKeyName(2, "Consultar.png");
+            this.imglTreeView.Images.SetKeyName(3, "Editar.png");
+            this.imglTreeView.Images.SetKeyName(4, "Info.png");
+            this.imglTreeView.Images.SetKeyName(5, "Inicio.png");
+            this.imglTreeView.Images.SetKeyName(6, "Salir.png");
+            this.imglTreeView.Images.SetKeyName(7, "TodosBaseDatos.png");
+            this.imglTreeView.Images.SetKeyName(8, "Pin.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(34, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // plVerGrupoSanguineo
             // 
@@ -630,117 +756,6 @@
             this.lblModificar.Text = "MODIFICAR DATOS";
             this.lblModificar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnSalirOficial
-            // 
-            this.btnSalirOficial.BackColor = System.Drawing.Color.White;
-            this.btnSalirOficial.FlatAppearance.BorderSize = 0;
-            this.btnSalirOficial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.btnSalirOficial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnSalirOficial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirOficial.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnSalirOficial.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnSalirOficial.Image = ((System.Drawing.Image)(resources.GetObject("btnSalirOficial.Image")));
-            this.btnSalirOficial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalirOficial.Location = new System.Drawing.Point(6, 342);
-            this.btnSalirOficial.Name = "btnSalirOficial";
-            this.btnSalirOficial.Size = new System.Drawing.Size(144, 45);
-            this.btnSalirOficial.TabIndex = 4;
-            this.btnSalirOficial.Text = "SALIR";
-            this.btnSalirOficial.UseVisualStyleBackColor = false;
-            this.btnSalirOficial.Click += new System.EventHandler(this.btnSalirOficial_Click);
-            // 
-            // tvLista
-            // 
-            this.tvLista.BackColor = System.Drawing.Color.White;
-            this.tvLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tvLista.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tvLista.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tvLista.ImageIndex = 0;
-            this.tvLista.ImageList = this.imglTreeView;
-            this.tvLista.LineColor = System.Drawing.Color.White;
-            this.tvLista.Location = new System.Drawing.Point(1, 123);
-            this.tvLista.Name = "tvLista";
-            treeNode1.ImageIndex = 5;
-            treeNode1.Name = "Inicio";
-            treeNode1.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode1.SelectedImageIndex = 5;
-            treeNode1.Text = "Inicio";
-            treeNode1.ToolTipText = "Inicio";
-            treeNode2.ImageIndex = 4;
-            treeNode2.Name = "Informacion";
-            treeNode2.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode2.SelectedImageIndex = 4;
-            treeNode2.Text = "Quienes Somos";
-            treeNode2.ToolTipText = "Información";
-            treeNode3.ImageIndex = 8;
-            treeNode3.Name = "Principal";
-            treeNode3.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode3.SelectedImageIndex = 8;
-            treeNode3.Text = "Página Principal";
-            treeNode3.ToolTipText = "Página Principal (Ver inicio)";
-            treeNode4.ImageIndex = 0;
-            treeNode4.Name = "RegistrarDonante";
-            treeNode4.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode4.SelectedImageIndex = 0;
-            treeNode4.Text = "Registrar Donante";
-            treeNode4.ToolTipText = "Agregar un nuevo donante";
-            treeNode5.ImageIndex = 3;
-            treeNode5.Name = "ModificarDatos";
-            treeNode5.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode5.SelectedImageIndex = 3;
-            treeNode5.Text = "Modificar Datos";
-            treeNode5.ToolTipText = "Modificar datos de un Donante";
-            treeNode6.ImageIndex = 2;
-            treeNode6.Name = "ConsultarDonante";
-            treeNode6.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode6.SelectedImageIndex = 2;
-            treeNode6.Text = "Consultar Donante";
-            treeNode6.ToolTipText = "Encontrar un Donante";
-            treeNode7.ImageIndex = 7;
-            treeNode7.Name = "TodosDonantes";
-            treeNode7.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode7.SelectedImageIndex = 7;
-            treeNode7.Text = "Donantes";
-            treeNode7.ToolTipText = "Ver todos los donantes";
-            treeNode8.ImageIndex = 1;
-            treeNode8.Name = "VerPorGrupo";
-            treeNode8.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode8.SelectedImageIndex = 1;
-            treeNode8.Text = "Grupo Sanguineo";
-            treeNode8.ToolTipText = "Ver los donantes por grupo sanguineo";
-            treeNode9.ImageIndex = 8;
-            treeNode9.Name = "VerDonantes";
-            treeNode9.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode9.SelectedImageIndex = 8;
-            treeNode9.Text = "Ver los Donantes";
-            treeNode9.ToolTipText = "Lista de todos los donantes";
-            this.tvLista.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode9});
-            this.tvLista.SelectedImageIndex = 0;
-            this.tvLista.ShowNodeToolTips = true;
-            this.tvLista.Size = new System.Drawing.Size(166, 168);
-            this.tvLista.TabIndex = 3;
-            this.tvLista.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvLista_AfterSelect);
-            // 
-            // imglTreeView
-            // 
-            this.imglTreeView.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imglTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglTreeView.ImageStream")));
-            this.imglTreeView.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglTreeView.Images.SetKeyName(0, "Agregar.png");
-            this.imglTreeView.Images.SetKeyName(1, "BaseDatos.png");
-            this.imglTreeView.Images.SetKeyName(2, "Consultar.png");
-            this.imglTreeView.Images.SetKeyName(3, "Editar.png");
-            this.imglTreeView.Images.SetKeyName(4, "Info.png");
-            this.imglTreeView.Images.SetKeyName(5, "Inicio.png");
-            this.imglTreeView.Images.SetKeyName(6, "Salir.png");
-            this.imglTreeView.Images.SetKeyName(7, "TodosBaseDatos.png");
-            this.imglTreeView.Images.SetKeyName(8, "Pin.png");
-            // 
             // plConsultarDonante
             // 
             this.plConsultarDonante.Controls.Add(this.btnBuscarConsultar);
@@ -1161,17 +1176,6 @@
             this.lblRegistro.Text = "REGISTRO DE DONANTE";
             this.lblRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // plInicio
             // 
             this.plInicio.Controls.Add(this.groupBox1);
@@ -1373,11 +1377,6 @@
             this.tmrFotos.Interval = 900;
             this.tmrFotos.Tick += new System.EventHandler(this.tmrFotos_Tick);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -1413,8 +1412,8 @@
             // tsbPrincipal
             // 
             this.tsbPrincipal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inicioToolStripMenuItem,
-            this.quienesSomosToolStripMenuItem});
+            this.tsmiInicio,
+            this.tsmiQS});
             this.tsbPrincipal.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tsbPrincipal.ForeColor = System.Drawing.Color.Maroon;
             this.tsbPrincipal.Image = global::ElProyecto.Properties.Resources.Inicio;
@@ -1424,17 +1423,17 @@
             this.tsbPrincipal.Text = "Pag. Principal";
             this.tsbPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // inicioToolStripMenuItem
+            // tsmiInicio
             // 
-            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.inicioToolStripMenuItem.Text = "Inicio";
+            this.tsmiInicio.Name = "tsmiInicio";
+            this.tsmiInicio.Size = new System.Drawing.Size(156, 22);
+            this.tsmiInicio.Text = "Inicio";
             // 
-            // quienesSomosToolStripMenuItem
+            // tsmiQS
             // 
-            this.quienesSomosToolStripMenuItem.Name = "quienesSomosToolStripMenuItem";
-            this.quienesSomosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.quienesSomosToolStripMenuItem.Text = "Quienes Somos";
+            this.tsmiQS.Name = "tsmiQS";
+            this.tsmiQS.Size = new System.Drawing.Size(156, 22);
+            this.tsmiQS.Text = "Quienes Somos";
             // 
             // toolStripSeparator6
             // 
@@ -1492,6 +1491,9 @@
             // 
             // tsbDatos
             // 
+            this.tsbDatos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiTLD,
+            this.tsmiPGS});
             this.tsbDatos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tsbDatos.ForeColor = System.Drawing.Color.Maroon;
             this.tsbDatos.Image = global::ElProyecto.Properties.Resources.BaseDatos;
@@ -1501,6 +1503,18 @@
             this.tsbDatos.Text = "Datos";
             this.tsbDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbDatos.ToolTipText = "Datos de los Donantes";
+            // 
+            // tsmiTLD
+            // 
+            this.tsmiTLD.Name = "tsmiTLD";
+            this.tsmiTLD.Size = new System.Drawing.Size(190, 22);
+            this.tsmiTLD.Text = "Todos los Donantes";
+            // 
+            // tsmiPGS
+            // 
+            this.tsmiPGS.Name = "tsmiPGS";
+            this.tsmiPGS.Size = new System.Drawing.Size(190, 22);
+            this.tsmiPGS.Text = "Por Grupo Sanguineo";
             // 
             // toolStripSeparator10
             // 
@@ -1517,17 +1531,45 @@
             this.tsbSalir.Size = new System.Drawing.Size(55, 35);
             this.tsbSalir.Text = "SALIR";
             this.tsbSalir.ToolTipText = "Salir del Programa";
+            this.tsbSalir.Click += new System.EventHandler(this.tsbSalir_Click);
+            // 
+            // rtextQuienesSomos
+            // 
+            this.rtextQuienesSomos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtextQuienesSomos.BackColor = System.Drawing.Color.Maroon;
+            this.rtextQuienesSomos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtextQuienesSomos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rtextQuienesSomos.ForeColor = System.Drawing.Color.White;
+            this.rtextQuienesSomos.Location = new System.Drawing.Point(22, 32);
+            this.rtextQuienesSomos.Name = "rtextQuienesSomos";
+            this.rtextQuienesSomos.ReadOnly = true;
+            this.rtextQuienesSomos.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.rtextQuienesSomos.Size = new System.Drawing.Size(0, 0);
+            this.rtextQuienesSomos.TabIndex = 12;
+            this.rtextQuienesSomos.Text = resources.GetString("rtextQuienesSomos.Text");
+            // 
+            // plQuienesSomos
+            // 
+            this.plQuienesSomos.BackColor = System.Drawing.Color.Maroon;
+            this.plQuienesSomos.Controls.Add(this.rtextQuienesSomos);
+            this.plQuienesSomos.Location = new System.Drawing.Point(649, 409);
+            this.plQuienesSomos.Name = "plQuienesSomos";
+            this.plQuienesSomos.Size = new System.Drawing.Size(20, 20);
+            this.plQuienesSomos.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(761, 416);
+            this.ClientSize = new System.Drawing.Size(762, 415);
+            this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.plVerDonantes);
             this.Controls.Add(this.plInicio);
+            this.Controls.Add(this.plVerDonantes);
             this.Controls.Add(this.plModificarDatos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.plRegistrarDonante);
@@ -1540,6 +1582,7 @@
             this.Text = "Banco de Sangre Por Más Vidas";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.plVerGrupoSanguineo.ResumeLayout(false);
             this.plVerGrupoSanguineo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupoSanguineo)).EndInit();
@@ -1563,7 +1606,6 @@
             this.tpPersonal.PerformLayout();
             this.tpPrincipal.ResumeLayout(false);
             this.tpPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.plInicio.ResumeLayout(false);
             this.plInicio.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1572,6 +1614,7 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tsHerramientas.ResumeLayout(false);
             this.tsHerramientas.PerformLayout();
+            this.plQuienesSomos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1658,12 +1701,11 @@
         private ListBox lbResultado;
         private GroupBox gbConsultar;
         private CheckedListBox checkedListBox1;
-        private ContextMenuStrip contextMenuStrip1;
         private TableLayoutPanel tableLayoutPanel1;
         private ToolStrip tsHerramientas;
         private ToolStripSplitButton tsbPrincipal;
-        private ToolStripMenuItem inicioToolStripMenuItem;
-        private ToolStripMenuItem quienesSomosToolStripMenuItem;
+        private ToolStripMenuItem tsmiInicio;
+        private ToolStripMenuItem tsmiQS;
         private ToolStripSeparator toolStripSeparator6;
         private ToolStripButton tsbRegistro;
         private ToolStripSeparator toolStripSeparator7;
@@ -1685,5 +1727,9 @@
         private Panel plVerGrupoSanguineo;
         private DataGridView dgvGrupoSanguineo;
         private Label lblVerGrupoSanguineo;
+        private ToolStripMenuItem tsmiTLD;
+        private ToolStripMenuItem tsmiPGS;
+        private RichTextBox rtextQuienesSomos;
+        private Panel plQuienesSomos;
     }
 }
