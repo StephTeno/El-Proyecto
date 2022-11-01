@@ -1,0 +1,15 @@
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\bin\Debug\net6.0-windows\CONTROLADOR.deps.json
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\bin\Debug\net6.0-windows\CONTROLADOR.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\bin\Debug\net6.0-windows\CONTROLADOR.pdb
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\bin\Debug\net6.0-windows\MODELO.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\bin\Debug\net6.0-windows\MODELO.pdb
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.csproj.AssemblyReference.cache
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.AssemblyInfoInputs.cache
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.AssemblyInfo.cs
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.csproj.CoreCompileInputs.cache
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.csproj.CopyComplete
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\refint\CONTROLADOR.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\CONTROLADOR.pdb
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\CONTROLADOR\obj\Debug\net6.0-windows\ref\CONTROLADOR.dll

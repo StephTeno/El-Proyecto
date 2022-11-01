@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CONTROLADOR/1.0.0": {
+        "dependencies": {
+          "MODELO": "1.0.0"
+        },
+        "runtime": {
+          "CONTROLADOR.dll": {}
+        }
+      },
+      "MODELO/1.0.0": {
+        "runtime": {
+          "MODELO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CONTROLADOR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MODELO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

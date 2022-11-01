@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ElProyecto/1.0.0": {
+        "dependencies": {
+          "CONTROLADOR": "1.0.0",
+          "MODELO": "1.0.0"
+        },
         "runtime": {
           "ElProyecto.dll": {}
+        }
+      },
+      "CONTROLADOR/1.0.0": {
+        "dependencies": {
+          "MODELO": "1.0.0"
+        },
+        "runtime": {
+          "CONTROLADOR.dll": {}
+        }
+      },
+      "MODELO/1.0.0": {
+        "runtime": {
+          "MODELO.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ElProyecto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CONTROLADOR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MODELO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

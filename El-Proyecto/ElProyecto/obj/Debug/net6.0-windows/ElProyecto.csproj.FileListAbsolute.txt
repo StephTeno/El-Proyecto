@@ -17,3 +17,8 @@ C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.genruntimeconfig.cache
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ref\ElProyecto.dll
 C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.Progreso.resources
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\CONTROLADOR.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\MODELO.dll
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\CONTROLADOR.pdb
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\MODELO.pdb
+C:\Users\steph\Source\Repos\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.csproj.CopyComplete
