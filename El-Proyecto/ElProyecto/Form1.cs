@@ -66,13 +66,18 @@ namespace ElProyecto
             plInicio.Visible = true;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
         }
         public void QuienesSomos()
         {
-            plInicio.Visible = true;
+            plInicio.Visible = false;
+            plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
         }
         public void RegistrarDonante()
         {
@@ -81,7 +86,8 @@ namespace ElProyecto
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
-            plRegistrarDonante.Size = new Size(592,379);
+            plVerGrupoSanguineo.Visible = false;
+            plRegistrarDonante.Size = new Size(592,370);
             plRegistrarDonante.Location= new Point(170, 38);
 
         }
@@ -92,7 +98,8 @@ namespace ElProyecto
             plModificarDatos.Visible = true;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
-            plModificarDatos.Size = new Size(592, 379);
+            plVerGrupoSanguineo.Visible = false;
+            plModificarDatos.Size = new Size(592, 370);
             plModificarDatos.Location = new Point(170, 38);
         }
         public void ConsultarDonantes()
@@ -102,7 +109,8 @@ namespace ElProyecto
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = true;
             plVerDonantes.Visible = false;
-            plConsultarDonante.Size = new Size(592, 379);
+            plVerGrupoSanguineo.Visible = false;
+            plConsultarDonante.Size = new Size(592, 370);
             plConsultarDonante.Location = new Point(170, 38);
         }
         public void VerTodosLosDonantes()
@@ -112,7 +120,8 @@ namespace ElProyecto
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = true;
-            plVerDonantes.Size = new Size(592, 379);
+            plVerGrupoSanguineo.Visible = false;
+            plVerDonantes.Size = new Size(592, 370);
             plVerDonantes.Location = new Point(170, 38);
         }
         public void VerLosDonantesGrupo()
@@ -123,7 +132,7 @@ namespace ElProyecto
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible=true;
-            plVerGrupoSanguineo.Size = new Size(592, 379);
+            plVerGrupoSanguineo.Size = new Size(592, 370);
             plVerGrupoSanguineo.Location = new Point(170, 38);
         }
         public void Salir()
