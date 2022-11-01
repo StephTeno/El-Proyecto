@@ -53,7 +53,6 @@ namespace ElProyecto
             plInicio.Visible = true;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
-            plInicio.Location = new Point(173, 0);
         }
         public void QuienesSomos()
         {
@@ -64,8 +63,8 @@ namespace ElProyecto
             plInicio.Visible = false;
             plRegistrarDonante.Visible = true;
             plModificarDatos.Visible = false;
-            plRegistrarDonante.Size = new Size(588,387);
-            plRegistrarDonante.Location= new Point(173, 0);
+            plRegistrarDonante.Size = new Size(592,379);
+            plRegistrarDonante.Location= new Point(170, 38);
 
         }
         public void ModificarDonantes()
@@ -73,16 +72,17 @@ namespace ElProyecto
             plInicio.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = true;
-            plModificarDatos.Size = new Size(588, 387);
-            plModificarDatos.Location = new Point(173, 0);
+            plModificarDatos.Size = new Size(592, 379);
+            plModificarDatos.Location = new Point(170, 38);
         }
         public void ConsultarDonantes()
         {
             plInicio.Visible = false;
             plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = true;
-            plModificarDatos.Size = new Size(588, 387);
-            plModificarDatos.Location = new Point(173, 0);
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = true;
+            plConsultarDonante.Size = new Size(592, 379);
+            plConsultarDonante.Location = new Point(170, 38);
         }
         public void VerTodosLosDonantes()
         {
