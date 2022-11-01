@@ -235,7 +235,7 @@
             treeNode1.Text = "Inicio";
             treeNode1.ToolTipText = "Inicio";
             treeNode2.ImageIndex = 4;
-            treeNode2.Name = "Informacion";
+            treeNode2.Name = "QuienesSomos";
             treeNode2.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             treeNode2.SelectedImageIndex = 4;
             treeNode2.Text = "Quienes Somos";

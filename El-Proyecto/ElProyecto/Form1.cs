@@ -20,7 +20,6 @@ namespace ElProyecto
         }
         private void tvLista_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            TreeNode node = tvLista.SelectedNode;
             switch (tvLista.SelectedNode.Text)
             {
                 case "Inicio":
