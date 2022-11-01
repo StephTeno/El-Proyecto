@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Inicio", 5, 5);
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Quienes Somos", 4, 4);
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Página Principal", 8, 8, new System.Windows.Forms.TreeNode[] {
@@ -43,6 +42,7 @@
             System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Ver los Donantes", 8, 8, new System.Windows.Forms.TreeNode[] {
             treeNode7,
             treeNode8});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSalirOficial = new System.Windows.Forms.Button();
@@ -144,6 +144,10 @@
             this.mtxtCed = new System.Windows.Forms.MaskedTextBox();
             this.mtxtCedula = new System.Windows.Forms.MaskedTextBox();
             this.mtxtPeso = new System.Windows.Forms.MaskedTextBox();
+            this.txtABuscar = new System.Windows.Forms.TextBox();
+            this.plVerDonantes = new System.Windows.Forms.Panel();
+            this.lblVerDonantes = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plInicio.SuspendLayout();
@@ -161,20 +165,23 @@
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tsHerramientas.SuspendLayout();
+            this.plVerDonantes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.plModificarDatos);
             this.panel1.Controls.Add(this.btnSalirOficial);
             this.panel1.Controls.Add(this.tvLista);
             this.panel1.Controls.Add(this.plConsultarDonante);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.plRegistrarDonante);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 417);
+            this.panel1.Size = new System.Drawing.Size(170, 374);
             this.panel1.TabIndex = 4;
             // 
             // panel2
@@ -316,7 +323,7 @@
             this.plInicio.Controls.Add(this.lblInicio);
             this.plInicio.Location = new System.Drawing.Point(170, 38);
             this.plInicio.Name = "plInicio";
-            this.plInicio.Size = new System.Drawing.Size(592, 379);
+            this.plInicio.Size = new System.Drawing.Size(592, 336);
             this.plInicio.TabIndex = 0;
             // 
             // groupBox1
@@ -509,7 +516,7 @@
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(61, 397);
+            this.plConsultarDonante.Location = new System.Drawing.Point(64, 397);
             this.plConsultarDonante.Name = "plConsultarDonante";
             this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
             this.plConsultarDonante.TabIndex = 6;
@@ -592,7 +599,7 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(22, 397);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(25, 397);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
             this.plRegistrarDonante.Size = new System.Drawing.Size(20, 20);
             this.plRegistrarDonante.TabIndex = 1;
@@ -721,7 +728,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblFecha.ForeColor = System.Drawing.Color.Maroon;
-            this.lblFecha.Location = new System.Drawing.Point(22, 72);
+            this.lblFecha.Location = new System.Drawing.Point(22, 71);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(109, 15);
             this.lblFecha.TabIndex = 8;
@@ -732,7 +739,7 @@
             this.lblPes.AutoSize = true;
             this.lblPes.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblPes.ForeColor = System.Drawing.Color.Maroon;
-            this.lblPes.Location = new System.Drawing.Point(275, 15);
+            this.lblPes.Location = new System.Drawing.Point(275, 17);
             this.lblPes.Name = "lblPes";
             this.lblPes.Size = new System.Drawing.Size(35, 15);
             this.lblPes.TabIndex = 7;
@@ -907,15 +914,16 @@
             // 
             // plModificarDatos
             // 
+            this.plModificarDatos.Controls.Add(this.txtABuscar);
             this.plModificarDatos.Controls.Add(this.btnCancelar2);
             this.plModificarDatos.Controls.Add(this.btnHecho);
             this.plModificarDatos.Controls.Add(this.tabControl1);
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(190, 423);
+            this.plModificarDatos.Location = new System.Drawing.Point(44, 397);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(572, 311);
+            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -1441,13 +1449,50 @@
             this.mtxtPeso.TabIndex = 15;
             this.mtxtPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // txtABuscar
+            // 
+            this.txtABuscar.Location = new System.Drawing.Point(337, 62);
+            this.txtABuscar.Name = "txtABuscar";
+            this.txtABuscar.Size = new System.Drawing.Size(197, 21);
+            this.txtABuscar.TabIndex = 7;
+            // 
+            // plVerDonantes
+            // 
+            this.plVerDonantes.Controls.Add(this.dataGridView1);
+            this.plVerDonantes.Controls.Add(this.lblVerDonantes);
+            this.plVerDonantes.Location = new System.Drawing.Point(119, 380);
+            this.plVerDonantes.Name = "plVerDonantes";
+            this.plVerDonantes.Size = new System.Drawing.Size(592, 379);
+            this.plVerDonantes.TabIndex = 10;
+            // 
+            // lblVerDonantes
+            // 
+            this.lblVerDonantes.AutoSize = true;
+            this.lblVerDonantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblVerDonantes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVerDonantes.Location = new System.Drawing.Point(32, 19);
+            this.lblVerDonantes.Name = "lblVerDonantes";
+            this.lblVerDonantes.Size = new System.Drawing.Size(168, 25);
+            this.lblVerDonantes.TabIndex = 1;
+            this.lblVerDonantes.Text = "VER DONANTES";
+            this.lblVerDonantes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(97, 112);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(761, 749);
-            this.Controls.Add(this.plModificarDatos);
+            this.Controls.Add(this.plVerDonantes);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.plInicio);
             this.Controls.Add(this.panel1);
@@ -1485,6 +1530,9 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tsHerramientas.ResumeLayout(false);
             this.tsHerramientas.PerformLayout();
+            this.plVerDonantes.ResumeLayout(false);
+            this.plVerDonantes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1591,5 +1639,9 @@
         private MaskedTextBox mtxtPe;
         private MaskedTextBox mtxtCedula;
         private MaskedTextBox mtxtPeso;
+        private TextBox txtABuscar;
+        private Panel plVerDonantes;
+        private DataGridView dataGridView1;
+        private Label lblVerDonantes;
     }
 }

@@ -1,11 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "CONTROLADOR/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MODELO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CONTROLADOR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CONTROLADOR.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "MODELO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MODELO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MODELO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CONTROLADOR/1.0.0": {
+      "type": "project",
+      "path": "../CONTROLADOR/CONTROLADOR.csproj",
+      "msbuildProject": "../CONTROLADOR/CONTROLADOR.csproj"
+    },
+    "MODELO/1.0.0": {
+      "type": "project",
+      "path": "../MODELO/MODELO.csproj",
+      "msbuildProject": "../MODELO/MODELO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "CONTROLADOR >= 1.0.0",
+      "MODELO >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\steph\\.nuget\\packages\\": {}
@@ -33,7 +74,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {
+              "projectPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj"
+            },
+            "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
+              "projectPath": "C:\\Users\\steph\\Source\\Repos\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

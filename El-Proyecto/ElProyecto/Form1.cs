@@ -1,3 +1,4 @@
+using CONTROLADOR;
 namespace ElProyecto
 {
     public partial class Form1 : Form
@@ -86,7 +87,13 @@ namespace ElProyecto
         }
         public void VerTodosLosDonantes()
         {
-            plInicio.Visible = true;
+            plInicio.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = true;
+            
+            plConsultarDonante.Size = new Size(592, 379);
+            plConsultarDonante.Location = new Point(170, 38);
         }
         public void VerLosDonantesGrupo()
         {
