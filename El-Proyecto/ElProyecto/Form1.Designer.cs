@@ -54,6 +54,14 @@
             this.lblVerGrupoSanguineo = new System.Windows.Forms.Label();
             this.plVerDonantes = new System.Windows.Forms.Panel();
             this.dgvVerDonantes = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechadeNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CentrodeDonacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblVerDonantes = new System.Windows.Forms.Label();
             this.plModificarDatos = new System.Windows.Forms.Panel();
             this.txtABuscar = new System.Windows.Forms.TextBox();
@@ -98,6 +106,7 @@
             this.btnAcep = new System.Windows.Forms.Button();
             this.tcInformacion = new System.Windows.Forms.TabControl();
             this.tpPersonal = new System.Windows.Forms.TabPage();
+            this.lblLbs = new System.Windows.Forms.Label();
             this.mtxtCed = new System.Windows.Forms.MaskedTextBox();
             this.mtxtPe = new System.Windows.Forms.MaskedTextBox();
             this.lblSex = new System.Windows.Forms.Label();
@@ -154,6 +163,7 @@
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.rtextQuienesSomos = new System.Windows.Forms.RichTextBox();
             this.plQuienesSomos = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plVerGrupoSanguineo.SuspendLayout();
@@ -324,9 +334,9 @@
             // 
             this.plVerGrupoSanguineo.Controls.Add(this.dgvGrupoSanguineo);
             this.plVerGrupoSanguineo.Controls.Add(this.lblVerGrupoSanguineo);
-            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(742, 409);
+            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(721, 411);
             this.plVerGrupoSanguineo.Name = "plVerGrupoSanguineo";
-            this.plVerGrupoSanguineo.Size = new System.Drawing.Size(20, 20);
+            this.plVerGrupoSanguineo.Size = new System.Drawing.Size(26, 25);
             this.plVerGrupoSanguineo.TabIndex = 11;
             // 
             // dgvGrupoSanguineo
@@ -354,25 +364,77 @@
             // 
             this.plVerDonantes.Controls.Add(this.dgvVerDonantes);
             this.plVerDonantes.Controls.Add(this.lblVerDonantes);
-            this.plVerDonantes.Location = new System.Drawing.Point(723, 409);
+            this.plVerDonantes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.plVerDonantes.Location = new System.Drawing.Point(279, 414);
             this.plVerDonantes.Name = "plVerDonantes";
-            this.plVerDonantes.Size = new System.Drawing.Size(20, 20);
+            this.plVerDonantes.Size = new System.Drawing.Size(24, 20);
             this.plVerDonantes.TabIndex = 10;
             // 
             // dgvVerDonantes
             // 
             this.dgvVerDonantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVerDonantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombre,
+            this.Apellido,
+            this.Cedula,
+            this.FechadeNacimiento,
+            this.Sexo,
+            this.Peso,
+            this.RH,
+            this.CentrodeDonacion});
+            this.dgvVerDonantes.GridColor = System.Drawing.Color.CornflowerBlue;
             this.dgvVerDonantes.Location = new System.Drawing.Point(29, 56);
             this.dgvVerDonantes.Name = "dgvVerDonantes";
             this.dgvVerDonantes.RowTemplate.Height = 25;
             this.dgvVerDonantes.Size = new System.Drawing.Size(537, 311);
             this.dgvVerDonantes.TabIndex = 2;
             // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Cedula
+            // 
+            this.Cedula.HeaderText = "Cedula";
+            this.Cedula.Name = "Cedula";
+            // 
+            // FechadeNacimiento
+            // 
+            this.FechadeNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechadeNacimiento.Name = "FechadeNacimiento";
+            // 
+            // Sexo
+            // 
+            this.Sexo.HeaderText = "Sexo";
+            this.Sexo.Name = "Sexo";
+            // 
+            // Peso
+            // 
+            this.Peso.HeaderText = "Peso";
+            this.Peso.Name = "Peso";
+            // 
+            // RH
+            // 
+            this.RH.HeaderText = "RH";
+            this.RH.Name = "RH";
+            // 
+            // CentrodeDonacion
+            // 
+            this.CentrodeDonacion.HeaderText = "Centro De Donacion";
+            this.CentrodeDonacion.Name = "CentrodeDonacion";
+            // 
             // lblVerDonantes
             // 
             this.lblVerDonantes.AutoSize = true;
             this.lblVerDonantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblVerDonantes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVerDonantes.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblVerDonantes.Location = new System.Drawing.Point(32, 19);
             this.lblVerDonantes.Name = "lblVerDonantes";
             this.lblVerDonantes.Size = new System.Drawing.Size(168, 25);
@@ -389,9 +451,9 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(687, 409);
+            this.plModificarDatos.Location = new System.Drawing.Point(768, 80);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
+            this.plModificarDatos.Size = new System.Drawing.Size(678, 375);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -441,6 +503,7 @@
             this.btnHecho.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHecho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHecho.UseVisualStyleBackColor = false;
+            this.btnHecho.Click += new System.EventHandler(this.btnHecho_Click);
             // 
             // tabControl1
             // 
@@ -454,6 +517,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.mtxtCedula);
             this.tabPage1.Controls.Add(this.lblSexo);
             this.tabPage1.Controls.Add(this.mtxtPeso);
@@ -499,7 +563,7 @@
             // mtxtPeso
             // 
             this.mtxtPeso.Location = new System.Drawing.Point(319, 17);
-            this.mtxtPeso.Mask = "000.00 lbs";
+            this.mtxtPeso.Mask = "000.00";
             this.mtxtPeso.Name = "mtxtPeso";
             this.mtxtPeso.Size = new System.Drawing.Size(118, 21);
             this.mtxtPeso.TabIndex = 15;
@@ -762,9 +826,9 @@
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(706, 409);
+            this.plConsultarDonante.Location = new System.Drawing.Point(784, 0);
             this.plConsultarDonante.Name = "plConsultarDonante";
-            this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
+            this.plConsultarDonante.Size = new System.Drawing.Size(432, 46);
             this.plConsultarDonante.TabIndex = 6;
             // 
             // btnBuscarConsultar
@@ -845,9 +909,9 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(778, 38);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(202, 411);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
-            this.plRegistrarDonante.Size = new System.Drawing.Size(580, 349);
+            this.plRegistrarDonante.Size = new System.Drawing.Size(19, 25);
             this.plRegistrarDonante.TabIndex = 1;
             this.plRegistrarDonante.Visible = false;
             // 
@@ -904,6 +968,7 @@
             // 
             // tpPersonal
             // 
+            this.tpPersonal.Controls.Add(this.lblLbs);
             this.tpPersonal.Controls.Add(this.mtxtCed);
             this.tpPersonal.Controls.Add(this.mtxtPe);
             this.tpPersonal.Controls.Add(this.lblSex);
@@ -925,6 +990,17 @@
             this.tpPersonal.Text = "Información Personal";
             this.tpPersonal.UseVisualStyleBackColor = true;
             // 
+            // lblLbs
+            // 
+            this.lblLbs.AutoSize = true;
+            this.lblLbs.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblLbs.ForeColor = System.Drawing.Color.Maroon;
+            this.lblLbs.Location = new System.Drawing.Point(442, 16);
+            this.lblLbs.Name = "lblLbs";
+            this.lblLbs.Size = new System.Drawing.Size(22, 15);
+            this.lblLbs.TabIndex = 15;
+            this.lblLbs.Text = "lbs";
+            // 
             // mtxtCed
             // 
             this.mtxtCed.Location = new System.Drawing.Point(78, 95);
@@ -937,7 +1013,7 @@
             // mtxtPe
             // 
             this.mtxtPe.Location = new System.Drawing.Point(315, 14);
-            this.mtxtPe.Mask = "000.00 lbs";
+            this.mtxtPe.Mask = "000.00";
             this.mtxtPe.Name = "mtxtPe";
             this.mtxtPe.Size = new System.Drawing.Size(118, 21);
             this.mtxtPe.TabIndex = 13;
@@ -1068,10 +1144,10 @@
             this.tpPrincipal.Controls.Add(this.cmbGrupo);
             this.tpPrincipal.Controls.Add(this.lblCentro);
             this.tpPrincipal.Controls.Add(this.txtCentro);
-            this.tpPrincipal.Location = new System.Drawing.Point(4, 25);
+            this.tpPrincipal.Location = new System.Drawing.Point(4, 24);
             this.tpPrincipal.Name = "tpPrincipal";
             this.tpPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPrincipal.Size = new System.Drawing.Size(517, 133);
+            this.tpPrincipal.Size = new System.Drawing.Size(517, 134);
             this.tpPrincipal.TabIndex = 1;
             this.tpPrincipal.Text = "Información para Donar";
             this.tpPrincipal.UseVisualStyleBackColor = true;
@@ -1568,10 +1644,21 @@
             // 
             this.plQuienesSomos.BackColor = System.Drawing.Color.Maroon;
             this.plQuienesSomos.Controls.Add(this.rtextQuienesSomos);
-            this.plQuienesSomos.Location = new System.Drawing.Point(190, 420);
+            this.plQuienesSomos.Location = new System.Drawing.Point(176, 414);
             this.plQuienesSomos.Name = "plQuienesSomos";
             this.plQuienesSomos.Size = new System.Drawing.Size(20, 20);
             this.plQuienesSomos.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(443, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 15);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "lbs";
             // 
             // Form1
             // 
@@ -1745,5 +1832,15 @@
         private ToolStripMenuItem tsmiPGS;
         private RichTextBox rtextQuienesSomos;
         private Panel plQuienesSomos;
+        private Label lblLbs;
+        private DataGridViewTextBoxColumn nombre;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Cedula;
+        private DataGridViewTextBoxColumn FechadeNacimiento;
+        private DataGridViewTextBoxColumn Sexo;
+        private DataGridViewTextBoxColumn Peso;
+        private DataGridViewTextBoxColumn RH;
+        private DataGridViewTextBoxColumn CentrodeDonacion;
+        private Label label1;
     }
 }

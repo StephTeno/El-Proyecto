@@ -3,6 +3,7 @@ namespace ElProyecto
 {
     public partial class Form1 : Form
     {
+        Contrl controlador = new Contrl();
         static int i, o;
         public Form1()
         {
@@ -338,10 +339,15 @@ namespace ElProyecto
             plVerGrupoSanguineo.Size = new Size(592, 370);
             plVerGrupoSanguineo.Location = new Point(170, 38);
         }
-
+        
         private void btnAcep_Click(object sender, EventArgs e)
         {
-            
+            controlador.agregarDatos(txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbGrupo, cmbRh, txtCentro,dgvVerDonantes);
+        }
+
+        private void btnHecho_Click(object sender, EventArgs e)
+        {
+            int posicionComboBox=cmbBuscar.
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
