@@ -347,7 +347,13 @@ namespace ElProyecto
 
         private void btnHecho_Click(object sender, EventArgs e)
         {
-            int posicionComboBox=cmbBuscar.
+            //REALIZAR BUSQUEDA, UTILIZAR DESPUES
+            //int posicionComboBox = cmbBuscar.SelectedIndex;
+            //switch (posicionComboBox)
+            //{
+            //    case 0:
+
+            //}
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };

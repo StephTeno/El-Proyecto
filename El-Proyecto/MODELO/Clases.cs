@@ -84,14 +84,41 @@
     public class baseDeDatos
     {
         static List<Donante> baseDeDatosDonante = new List<Donante>();
+        static List<Sangre> baseDeDatosSangre = new List<Sangre>();
+
+        public List<Donante> BaseDeDatosDonante { get => baseDeDatosDonante; set => baseDeDatosDonante = value; }
+        public  List<Sangre> BaseDeDatosSangre { get => baseDeDatosSangre; set => baseDeDatosSangre = value; }
+
         public void AddContact(Donante dato)
         {
             baseDeDatosDonante.Add(dato);
+        }
+        public void añadirSangre(Sangre sangre)
+        {
+            baseDeDatosSangre.Add(sangre);
         }
         public void RemoverContacto(int i)
         {
             if (i != -1)
                 baseDeDatosDonante.RemoveAt(i);
+        }
+        public Donante buscarDatosDonante(string idDonante, List<Donante> a)
+        {
+            //Transformamos el arrayList a un tipo que implemente linQ
+            //var clientela = baseDeDatosCliente.OfType<cliente>();
+
+            //Usamos LinQ
+            var buscCliente = from Donante in a
+                              where Donante.Id_Donante == (idDonante)
+                              select Donante;
+
+
+            Donante pepe = buscCliente.First();
+            //foreach(cliente a in buscCliente)
+            //{
+            //    pepe = 
+            //}
+            return pepe;
         }
     }
 }

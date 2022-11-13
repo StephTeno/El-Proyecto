@@ -4,6 +4,7 @@ namespace CONTROLADOR
 {
     public class Contrl
     {
+        static int idContador = 0;
         Donante donante=new Donante();
         Sangre sangre=new Sangre();
         baseDeDatos datosBase = new baseDeDatos();
@@ -43,5 +44,31 @@ namespace CONTROLADOR
             verDatos(dgvDatos);
             MessageBox.Show("Contacto Agregado");
         }
+        //PARA REALIZAR BUSQUEDA...
+        //public void buscarDonante(TextBox Nom, Label nombrecito, Label prod, Label ubi, Label cUni, Label cantP, Label total, Label fecha, Label email, Label idVenta, ErrorProvider error)
+        //{
+        //    //bool w = VerificarCamposLlenosBusqueda(Nom, error);
+        //    //if (w)
+        //    //{
+
+        //        List<Donante> m = datosBase.BaseDeDatosDonante;
+        //        List<Sangre> n = datosBase.BaseDeDatosSangre;
+
+        //        //BorrarErrorBusqueda(Nom, error);
+        //        string nom = Nom.Text;
+        //        Donante donador= datosBase.buscarDatosDonante(nom, m);
+        //        Sangre sangriento = RetornarVentaCliente(clientico.IdCliente, m, n);
+        //        nombrecito.Text = clientico.Nombre;
+        //        prod.Text = Convert.ToString(ventas.NombreProducto);
+        //        ubi.Text = Convert.ToString(clientico.Direccion);
+        //        cUni.Text = Convert.ToString(ventas.CostU1);
+        //        cantP.Text = Convert.ToString(ventas.Cantidad);
+        //        total.Text = Convert.ToString(ventas.Total);
+        //        fecha.Text = Convert.ToString(ventas.Fecha);
+        //        email.Text = Convert.ToString(clientico.Email);
+        //        idVenta.Text = Convert.ToString(ventas.IdVentas1);
+        //    //}
+        //    //else { MessageBox.Show("Ingrese una ID valida"); }
+        //}
     }
 }
