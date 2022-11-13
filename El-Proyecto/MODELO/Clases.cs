@@ -73,12 +73,25 @@
         public Donante(string cen_Donacion, string id_Donante, Sangre sangre, char sexo, string nombre, string apellido, DateTime f_Nac, string cedula, double peso) : base(sangre, sexo, nombre, apellido, f_Nac, cedula, peso)
         {
             this.cen_Donacion = cen_Donacion;
-            this.id_Donante=id_Donante;
+            this.id_Donante = id_Donante;
         }
         public Donante() : base()
         {
         }
         public String Cen_Donacion { get => cen_Donacion; set => cen_Donacion = value; }
         public String Id_Donante { get => id_Donante; set => id_Donante = value; }
+    }
+    public class baseDeDatos
+    {
+        static List<Donante> baseDeDatosDonante = new List<Donante>();
+        public void AddContact(Donante dato)
+        {
+            baseDeDatosDonante.Add(dato);
+        }
+        public void RemoverContacto(int i)
+        {
+            if (i != -1)
+                baseDeDatosDonante.RemoveAt(i);
+        }
     }
 }
