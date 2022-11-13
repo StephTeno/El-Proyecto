@@ -845,9 +845,9 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(668, 409);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(778, 38);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
-            this.plRegistrarDonante.Size = new System.Drawing.Size(20, 20);
+            this.plRegistrarDonante.Size = new System.Drawing.Size(580, 349);
             this.plRegistrarDonante.TabIndex = 1;
             this.plRegistrarDonante.Visible = false;
             // 
@@ -890,6 +890,7 @@
             this.btnAcep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAcep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAcep.UseVisualStyleBackColor = false;
+            this.btnAcep.Click += new System.EventHandler(this.btnAcep_Click);
             // 
             // tcInformacion
             // 
@@ -1067,10 +1068,10 @@
             this.tpPrincipal.Controls.Add(this.cmbGrupo);
             this.tpPrincipal.Controls.Add(this.lblCentro);
             this.tpPrincipal.Controls.Add(this.txtCentro);
-            this.tpPrincipal.Location = new System.Drawing.Point(4, 24);
+            this.tpPrincipal.Location = new System.Drawing.Point(4, 25);
             this.tpPrincipal.Name = "tpPrincipal";
             this.tpPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPrincipal.Size = new System.Drawing.Size(517, 134);
+            this.tpPrincipal.Size = new System.Drawing.Size(517, 133);
             this.tpPrincipal.TabIndex = 1;
             this.tpPrincipal.Text = "Información para Donar";
             this.tpPrincipal.UseVisualStyleBackColor = true;

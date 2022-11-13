@@ -21,16 +21,16 @@
     public class Sangre
     {
         private String grupo;
-        private Char rh;
+        private string rh;
 
-        public Sangre(string grupo, char rh)
+        public Sangre(string grupo, string rh)
         {
             this.grupo = grupo;
             this.rh = rh;
         }
         public Sangre() { }
         public String Grupo { get => grupo; set => grupo = value; }
-        public Char Rh { get => rh; set => rh = value; }
+        public String Rh { get => rh; set => rh = value; }
 
     }
     public class Persona

@@ -339,6 +339,11 @@ namespace ElProyecto
             plVerGrupoSanguineo.Location = new Point(170, 38);
         }
 
+        private void btnAcep_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }
