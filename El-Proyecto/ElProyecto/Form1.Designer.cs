@@ -1221,6 +1221,7 @@
             this.btnGrupoSanguineo.Text = "GRUPO SANGUINEO";
             this.btnGrupoSanguineo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGrupoSanguineo.UseVisualStyleBackColor = false;
+            this.btnGrupoSanguineo.Click += new System.EventHandler(this.btnGrupoSanguineo_Click);
             // 
             // btnTodosDonantes
             // 
@@ -1240,6 +1241,7 @@
             this.btnTodosDonantes.Text = "VER DONANTES";
             this.btnTodosDonantes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTodosDonantes.UseVisualStyleBackColor = false;
+            this.btnTodosDonantes.Click += new System.EventHandler(this.btnTodosDonantes_Click);
             // 
             // btnConsultar
             // 
@@ -1259,6 +1261,7 @@
             this.btnConsultar.Text = "CONSULTAR DONANTE";
             this.btnConsultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnModificar
             // 
@@ -1278,6 +1281,7 @@
             this.btnModificar.Text = "MODIFICAR DATOS";
             this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnRegistrar
             // 
@@ -1297,6 +1301,7 @@
             this.btnRegistrar.Text = "REGISTAR DONANTE";
             this.btnRegistrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // gbBotones
             // 
@@ -1327,6 +1332,7 @@
             this.btnQuienesSomos.Text = "QUIENES SOMOS";
             this.btnQuienesSomos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQuienesSomos.UseVisualStyleBackColor = false;
+            this.btnQuienesSomos.Click += new System.EventHandler(this.btnQuienesSomos_Click);
             // 
             // lblInformacion
             // 
@@ -1428,12 +1434,14 @@
             this.tsmiInicio.Name = "tsmiInicio";
             this.tsmiInicio.Size = new System.Drawing.Size(156, 22);
             this.tsmiInicio.Text = "Inicio";
+            this.tsmiInicio.Click += new System.EventHandler(this.tsmiInicio_Click);
             // 
             // tsmiQS
             // 
             this.tsmiQS.Name = "tsmiQS";
             this.tsmiQS.Size = new System.Drawing.Size(156, 22);
             this.tsmiQS.Text = "Quienes Somos";
+            this.tsmiQS.Click += new System.EventHandler(this.tsmiQS_Click);
             // 
             // toolStripSeparator6
             // 
@@ -1450,6 +1458,7 @@
             this.tsbRegistro.Size = new System.Drawing.Size(103, 35);
             this.tsbRegistro.Text = "Registro Donante";
             this.tsbRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbRegistro.Click += new System.EventHandler(this.tsbRegistro_Click);
             // 
             // toolStripSeparator7
             // 
@@ -1466,6 +1475,7 @@
             this.tsbModificar.Size = new System.Drawing.Size(111, 35);
             this.tsbModificar.Text = "Modificar Donante";
             this.tsbModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbModificar.Click += new System.EventHandler(this.tsbModificar_Click);
             // 
             // toolStripSeparator8
             // 
@@ -1483,6 +1493,7 @@
             this.tsbConsultar.Text = "Consultar Donante";
             this.tsbConsultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbConsultar.ToolTipText = "Consultar Donante";
+            this.tsbConsultar.Click += new System.EventHandler(this.tsbConsultar_Click);
             // 
             // toolStripSeparator9
             // 
@@ -1509,12 +1520,14 @@
             this.tsmiTLD.Name = "tsmiTLD";
             this.tsmiTLD.Size = new System.Drawing.Size(190, 22);
             this.tsmiTLD.Text = "Todos los Donantes";
+            this.tsmiTLD.Click += new System.EventHandler(this.tsmiTLD_Click);
             // 
             // tsmiPGS
             // 
             this.tsmiPGS.Name = "tsmiPGS";
             this.tsmiPGS.Size = new System.Drawing.Size(190, 22);
             this.tsmiPGS.Text = "Por Grupo Sanguineo";
+            this.tsmiPGS.Click += new System.EventHandler(this.tsmiPGS_Click);
             // 
             // toolStripSeparator10
             // 
@@ -1554,7 +1567,7 @@
             // 
             this.plQuienesSomos.BackColor = System.Drawing.Color.Maroon;
             this.plQuienesSomos.Controls.Add(this.rtextQuienesSomos);
-            this.plQuienesSomos.Location = new System.Drawing.Point(649, 409);
+            this.plQuienesSomos.Location = new System.Drawing.Point(190, 420);
             this.plQuienesSomos.Name = "plQuienesSomos";
             this.plQuienesSomos.Size = new System.Drawing.Size(20, 20);
             this.plQuienesSomos.TabIndex = 12;
@@ -1564,7 +1577,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(762, 415);
+            this.ClientSize = new System.Drawing.Size(1370, 486);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);

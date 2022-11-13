@@ -170,6 +170,175 @@ namespace ElProyecto
             Salir();
         }
 
+        private void btnQuienesSomos_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = true;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            rtextQuienesSomos.SelectionAlignment = HorizontalAlignment.Center;
+            plQuienesSomos.Size = new Size(592, 370);
+            plQuienesSomos.Location = new Point(170, 38);
+        }
+
+        private void tsmiInicio_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = true;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+        }
+
+        private void tsmiQS_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = true;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            rtextQuienesSomos.SelectionAlignment = HorizontalAlignment.Center;
+            plQuienesSomos.Size = new Size(592, 370);
+            plQuienesSomos.Location = new Point(170, 38);
+        }
+
+        private void tsbRegistro_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = true;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plRegistrarDonante.Size = new Size(592, 370);
+            plRegistrarDonante.Location = new Point(170, 38);
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = true;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plRegistrarDonante.Size = new Size(592, 370);
+            plRegistrarDonante.Location = new Point(170, 38);
+        }
+
+        private void tsbModificar_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = true;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plModificarDatos.Size = new Size(592, 370);
+            plModificarDatos.Location = new Point(170, 38);
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = true;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plModificarDatos.Size = new Size(592, 370);
+            plModificarDatos.Location = new Point(170, 38);
+        }
+
+        private void tsbConsultar_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = true;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plConsultarDonante.Size = new Size(592, 370);
+            plConsultarDonante.Location = new Point(170, 38);
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = true;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = false;
+            plConsultarDonante.Size = new Size(592, 370);
+            plConsultarDonante.Location = new Point(170, 38);
+        }
+
+        private void tsmiTLD_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = true;
+            plVerGrupoSanguineo.Visible = false;
+            plVerDonantes.Size = new Size(592, 370);
+            plVerDonantes.Location = new Point(170, 38);
+        }
+
+        private void btnTodosDonantes_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = true;
+            plVerGrupoSanguineo.Visible = false;
+            plVerDonantes.Size = new Size(592, 370);
+            plVerDonantes.Location = new Point(170, 38);
+        }
+
+        private void tsmiPGS_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = true;
+            plVerGrupoSanguineo.Size = new Size(592, 370);
+            plVerGrupoSanguineo.Location = new Point(170, 38);
+        }
+
+        private void btnGrupoSanguineo_Click(object sender, EventArgs e)
+        {
+            plInicio.Visible = false;
+            plQuienesSomos.Visible = false;
+            plRegistrarDonante.Visible = false;
+            plModificarDatos.Visible = false;
+            plConsultarDonante.Visible = false;
+            plVerDonantes.Visible = false;
+            plVerGrupoSanguineo.Visible = true;
+            plVerGrupoSanguineo.Size = new Size(592, 370);
+            plVerGrupoSanguineo.Location = new Point(170, 38);
+        }
+
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
     }
 }
