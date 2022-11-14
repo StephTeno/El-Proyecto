@@ -102,6 +102,33 @@
             if (i != -1)
                 baseDeDatosDonante.RemoveAt(i);
         }
+        public int Buscar(string id) 
+        {
+            int o=-1;
+            for (int i = 0; i < BaseDeDatosDonante.Count; i++)
+            {
+                if (BaseDeDatosDonante[i].Id_Donante == id)
+                    o = i;
+            }
+            return o;
+        }
+        public void Modificar(string id, string nombre, string apellido, string cedula, DateTime f_Nac, char sexo, double peso, string grupo, string rh, string cen_Donacion) 
+        {
+            int pos = Buscar(id);
+            BaseDeDatosDonante.RemoveAt(pos);
+            Donante Nuevo=new Donante();
+            Nuevo.Nombre = nombre;
+            Nuevo.Apellido= apellido;
+            Nuevo.Cedula= cedula;
+            Nuevo.F_Nac= f_Nac;
+            Nuevo.Sexo= sexo;
+            Nuevo.Peso= peso;
+            Nuevo.Sangre.Grupo= grupo;
+            Nuevo.Sangre.Rh= rh;
+            Nuevo.Cen_Donacion= cen_Donacion;
+            BaseDeDatosDonante.Insert(pos,Nuevo);
+        }
+
         public Donante buscarDatosDonante(string idDonante, List<Donante> a)
         {
             //Transformamos el arrayList a un tipo que implemente linQ

@@ -3,7 +3,7 @@ namespace ElProyecto
 {
     public partial class Form1 : Form
     {
-        Contrl controlador = new Contrl();
+        Contrl contr = new Contrl();
         static int i, o;
         public Form1()
         {
@@ -161,11 +161,9 @@ namespace ElProyecto
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
         private void lblFotos_Click(object sender, EventArgs e) { }
         private void txtCed_TextChanged(object sender, EventArgs e) { }
-        private void Form1_Load(object sender, EventArgs e){lbl_Id.Text = GeneraNumero();}
+        private void Form1_Load(object sender, EventArgs e) { lbl_Id.Text = GeneraNumero(); }
         private void tpPrincipal_Click(object sender, EventArgs e) { }
-
         private void plModificarDatos_Paint(object sender, PaintEventArgs e) { }
-
         private void tsbSalir_Click(object sender, EventArgs e)
         {
             Salir();
@@ -173,187 +171,119 @@ namespace ElProyecto
 
         private void btnQuienesSomos_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = true;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            rtextQuienesSomos.SelectionAlignment = HorizontalAlignment.Center;
-            plQuienesSomos.Size = new Size(592, 370);
-            plQuienesSomos.Location = new Point(170, 38);
+            QuienesSomos();
         }
 
         private void tsmiInicio_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = true;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
+            Inicio();
         }
 
         private void tsmiQS_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = true;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            rtextQuienesSomos.SelectionAlignment = HorizontalAlignment.Center;
-            plQuienesSomos.Size = new Size(592, 370);
-            plQuienesSomos.Location = new Point(170, 38);
+            QuienesSomos();
         }
 
         private void tsbRegistro_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = true;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plRegistrarDonante.Size = new Size(592, 370);
-            plRegistrarDonante.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                RegistrarDonante();
+            }
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = true;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plRegistrarDonante.Size = new Size(592, 370);
-            plRegistrarDonante.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                RegistrarDonante();
+            }
         }
 
         private void tsbModificar_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = true;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plModificarDatos.Size = new Size(592, 370);
-            plModificarDatos.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                ModificarDonantes();
+            }
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = true;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plModificarDatos.Size = new Size(592, 370);
-            plModificarDatos.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                ModificarDonantes();
+            }
         }
 
         private void tsbConsultar_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = true;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plConsultarDonante.Size = new Size(592, 370);
-            plConsultarDonante.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                ConsultarDonantes();
+            }
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = true;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = false;
-            plConsultarDonante.Size = new Size(592, 370);
-            plConsultarDonante.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                ConsultarDonantes();
+            }
         }
 
         private void tsmiTLD_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = true;
-            plVerGrupoSanguineo.Visible = false;
-            plVerDonantes.Size = new Size(592, 370);
-            plVerDonantes.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                VerTodosLosDonantes();
+            }
         }
 
         private void btnTodosDonantes_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = true;
-            plVerGrupoSanguineo.Visible = false;
-            plVerDonantes.Size = new Size(592, 370);
-            plVerDonantes.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                VerTodosLosDonantes();
+            }
         }
 
         private void tsmiPGS_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = true;
-            plVerGrupoSanguineo.Size = new Size(592, 370);
-            plVerGrupoSanguineo.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                VerLosDonantesGrupo();
+            }
         }
 
         private void btnGrupoSanguineo_Click(object sender, EventArgs e)
         {
-            plInicio.Visible = false;
-            plQuienesSomos.Visible = false;
-            plRegistrarDonante.Visible = false;
-            plModificarDatos.Visible = false;
-            plConsultarDonante.Visible = false;
-            plVerDonantes.Visible = false;
-            plVerGrupoSanguineo.Visible = true;
-            plVerGrupoSanguineo.Size = new Size(592, 370);
-            plVerGrupoSanguineo.Location = new Point(170, 38);
+            if (ProgressBar())
+            {
+                VerLosDonantesGrupo();
+            }
         }
         
         private void btnAcep_Click(object sender, EventArgs e)
         {
-            controlador.agregarDatos(txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbGrupo, cmbRh, txtCentro,dgvVerDonantes);
+            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbGrupo, cmbRh, txtCentro,dgvVerDonantes, dgvGrupoSanguineo);
+            lbl_Id.Text = GeneraNumero();
         }
 
         private void btnHecho_Click(object sender, EventArgs e)
         {
-            //REALIZAR BUSQUEDA, UTILIZAR DESPUES
-            //int posicionComboBox = cmbBuscar.SelectedIndex;
-            //switch (posicionComboBox)
-            //{
-            //    case 0:
+            contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
+        }
 
-            //}
+        private void plRegistrarDonante_Paint(object sender, PaintEventArgs e) { }
+
+        private void txtABuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtABuscar.Text != " ")
+            {
+                if (e.KeyCode == Keys.Enter)
+                { contr.VerEnTextBox(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion); txtNombre.Focus(); }
+            }
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
