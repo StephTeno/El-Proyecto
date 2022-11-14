@@ -69,6 +69,7 @@
             this.btnHecho = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.mtxtCedula = new System.Windows.Forms.MaskedTextBox();
             this.lblSexo = new System.Windows.Forms.Label();
             this.mtxtPeso = new System.Windows.Forms.MaskedTextBox();
@@ -163,7 +164,6 @@
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.rtextQuienesSomos = new System.Windows.Forms.RichTextBox();
             this.plQuienesSomos = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plVerGrupoSanguineo.SuspendLayout();
@@ -334,9 +334,9 @@
             // 
             this.plVerGrupoSanguineo.Controls.Add(this.dgvGrupoSanguineo);
             this.plVerGrupoSanguineo.Controls.Add(this.lblVerGrupoSanguineo);
-            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(721, 411);
+            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(228, 410);
             this.plVerGrupoSanguineo.Name = "plVerGrupoSanguineo";
-            this.plVerGrupoSanguineo.Size = new System.Drawing.Size(26, 25);
+            this.plVerGrupoSanguineo.Size = new System.Drawing.Size(20, 20);
             this.plVerGrupoSanguineo.TabIndex = 11;
             // 
             // dgvGrupoSanguineo
@@ -365,9 +365,9 @@
             this.plVerDonantes.Controls.Add(this.dgvVerDonantes);
             this.plVerDonantes.Controls.Add(this.lblVerDonantes);
             this.plVerDonantes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.plVerDonantes.Location = new System.Drawing.Point(279, 414);
+            this.plVerDonantes.Location = new System.Drawing.Point(279, 410);
             this.plVerDonantes.Name = "plVerDonantes";
-            this.plVerDonantes.Size = new System.Drawing.Size(24, 20);
+            this.plVerDonantes.Size = new System.Drawing.Size(20, 20);
             this.plVerDonantes.TabIndex = 10;
             // 
             // dgvVerDonantes
@@ -451,9 +451,9 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(768, 80);
+            this.plModificarDatos.Location = new System.Drawing.Point(253, 410);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(678, 375);
+            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -539,6 +539,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Información Personal";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(443, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 15);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "lbs";
             // 
             // mtxtCedula
             // 
@@ -826,9 +837,9 @@
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(784, 0);
+            this.plConsultarDonante.Location = new System.Drawing.Point(304, 410);
             this.plConsultarDonante.Name = "plConsultarDonante";
-            this.plConsultarDonante.Size = new System.Drawing.Size(432, 46);
+            this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
             this.plConsultarDonante.TabIndex = 6;
             // 
             // btnBuscarConsultar
@@ -909,9 +920,9 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(202, 411);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(202, 410);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
-            this.plRegistrarDonante.Size = new System.Drawing.Size(19, 25);
+            this.plRegistrarDonante.Size = new System.Drawing.Size(20, 20);
             this.plRegistrarDonante.TabIndex = 1;
             this.plRegistrarDonante.Visible = false;
             // 
@@ -1644,28 +1655,17 @@
             // 
             this.plQuienesSomos.BackColor = System.Drawing.Color.Maroon;
             this.plQuienesSomos.Controls.Add(this.rtextQuienesSomos);
-            this.plQuienesSomos.Location = new System.Drawing.Point(176, 414);
+            this.plQuienesSomos.Location = new System.Drawing.Point(176, 410);
             this.plQuienesSomos.Name = "plQuienesSomos";
             this.plQuienesSomos.Size = new System.Drawing.Size(20, 20);
             this.plQuienesSomos.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(443, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 15);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "lbs";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1370, 486);
+            this.ClientSize = new System.Drawing.Size(762, 414);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);

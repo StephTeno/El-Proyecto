@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marlon\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
       "projectName": "CONTROLADOR",
-      "projectPath": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
-      "packagesPath": "C:\\Users\\Marlon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Marlon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
-              "projectPath": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj"
+            "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj"
             }
           }
         }
@@ -74,7 +74,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -86,7 +87,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
