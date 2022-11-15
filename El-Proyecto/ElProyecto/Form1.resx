@@ -90,31 +90,31 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
         LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
         SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7hgAAAJNU0Z0AUkBTAIBAQkB
-        AAEYAQIBGAECARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMAATADAAEBAQABIAYAATAS
+        AAEoAQIBKAECARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMAATADAAEBAQABIAYAATAS
         AANhAdkDfQH6AwUBBvgAAcUBvgGwAf8BxQG+AbAB/wNIAYP0AAMpAT0DagH5A2EB2QN9AfoDBQEGCAAC
         KwF+AfwBNQE5AeUB/+AAA2QB2wNHAYADKAE7AcUBvgGwAf8EAAIrAX4B/AJDAUQBdwE1ATkB5QH/5AAB
         xQG+AbAB/wMEAQUEAAIrAX4B/AJDAUQBdwQAATUBOQHlAf8DMwFR4AADJwE5AyQBNQIrAX4B/AJDAUQB
         dwwAATUBOQHlAf8DMwFR4AACKwF+AfwCQwFEAXcUAAE1ATkB5QH/AzMBUdgAAisBfgH8AkMBRAF3HAAB
         NQE5AeUB/wMzAVHQAANiAe4CQwFEAXckAAE1ATkB5QH/ATUBOQHlAf8BNQE5AeUB/8gAAzUBVQE1ATkB
-        5QH/ATUBOQHlAf8BeAF8AYAB/iAAA0kBhwJBAWoB+dQAAjgBOQFdAXgBfAGAAf4YAANJAYcCQQFqAfnc
-        AAI4ATkBXQF4AXwBgAH+EAADSQGHAkEBagH55AACOAE5AV0BeAF8AYAB/ggAA0kBhwJBAWoB+ewAATUB
+        5QH/ATUBOQHlAf8BegF+AYAB/iAAA0kBhwJBAWoB+dQAAjgBOQFdAXoBfgGAAf4YAANJAYcCQQFqAfnc
+        AAI4ATkBXQF6AX4BgAH+EAADSQGHAkEBagH55AACOAE5AV0BegF+AYAB/ggAA0kBhwJBAWoB+ewAATUB
         OQHlAf8EAANJAYcCQQFqAfnwAAE1ATkB5QH/A0kBhwJBAWoB+fQAAzUBVQJfAWYB5egAAxsBJQNuAfUB
         xQG+AbAB/wHFAb4BsAH/AcUBvgGwAf8BxQG+AbAB/wHFAb4BsAH/A1EBnSwAAlIBVAGoATUBOQHlAf8D
-        BQEGLAADBgEIA04BlgJhAWwB6wE1AV4BYwH7AloBXQHHAzABSxQAAmYBXwHlAXoBbgFUAf8BegFuAVQB
+        BQEGLAADBgEIA04BlgJhAWwB6wE1AV4BXwH7AloBXQHHAzABSxQAAmYBXwHlAXoBbgFUAf8BegFuAVQB
         /wF6AW4BVAH/AXoBbgFUAf8BegFuAVQB/wF6AW4BVAH/AXoBbgFUAf8BegFuAVQB/wF6AW4BVAH/AXoB
         bgFUAf8BegFuAVQB/xwAA18B0wNfAfsDGgEjFAADUAGbAcUBvgGwAf8DGgEkIAACWQFbAcACYQFqAeYD
-        IAEtATUBOQHlAf8DCQELJAACXgFqAe0BeQKAAf4DRAF4AxEBFgMCAQMDKgE/Al0BYQHPATYBQwH0Af8D
+        IAEtATUBOQHlAf8DCQELJAACXgFqAe0BewKAAf4DRAF4AxEBFgMCAQMDKgE/Al0BYQHPATYBQwH0Af8D
         NQFVDAADXgHSAyUBNyQAAXoBbgFUAf8YAANnAeoDVwG1IAADCQEMAcUBvgGwAf8DGgEkGAADWgG/Al0B
         YwHfCAADGAEgATUBOQHlAf8DBwEJGAADBQEGATYBQwH0Af8DOAFcBAADPwFtAlsBYwHkAk0BfQH6AlYB
         VwGyAwwBEAQAAkgBYwH2A1MBpwgAAx8BLAF6AW4BTQH6IAADOQFdA0AB/RQAA0sBjANhAdYQAAJlAVwB
         5wH0AakBAwH/EAADCQEMAcUBvgGwAf8UAAJRAVMBogJgAWkB6BAAAxwBJwE1ATkB5QH/BAEUAAE2AUMB
-        9AH/AyEBMAMbASYBNgFDAfQB/wJWAVgBswMXAR8DBAEFAzkBXgF4AoAB/gJdAWEBzwQAAlEBbwH3AzMB
+        9AH/AyEBMAMbASYBNgFDAfQB/wJWAVgBswMXAR8DBAEFAzkBXgF6AoAB/gJdAWEBzwQAAlEBbwH3AzMB
         UggAAzkBXgF6AW4BVAH/AlcBVQG0EAADIwEyA4AB/gJlAV0B7BgAAcUBvgGwAf8UAAH0AakBAwH/AfQB
-        qQEDAf8UAANQAZsDUQGdDAADOQFeAk0BfQH6GAADLgFGAXcBewGAAf4QAAJKAUsBiwJWAVkBtgMJAQsB
+        qQEDAf8UAANQAZsDUQGdDAADOQFeAk0BfQH6GAADLgFGAXkBfQGAAf4QAAJKAUsBiwJWAVkBtgMJAQsB
         NgFDAfQB/wMIAQoUAAJXAVoBwgJbAV4BzQQBATYBQwH0Af8QAANKAYkBegFuAVQB/wMfASwEAAJjAVsB
         5AJjAVMB9gMPARQEAANjAekBxQG+AbAB/wHFAb4BsAH/AcUBvgGwAf8BxQG+AbAB/wM2AVkDXAG+FAAB
         9AGpAQMB/wH0AakBAwH/GAABxQG+AbAB/wgAAw4BEgE1ATkB5QH/IAADTQGTA2IB4QwAATYBQwH0Af8E
-        AAJRAW8B9wMiATEcAAF4AoAB/gMKAQ0CXAFhAdYDLgFGEAADgAH+AykBPQQAAXoBbgFcAfgDMQFOGAAB
+        AAJRAW8B9wMiATEcAAF6AoAB/gMKAQ0CXAFhAdYDLgFGEAADgAH+AykBPQQAAXoBbgFcAfgDMQFOGAAB
         xQG+AbAB/wNfAcsDKAE8FAAB9AGpAQMB/wH0AakBAwH/GAABxQG+AbAB/wgAATUBOQHlAf8DFgEeJAAD
         YgHuAzoBYQgAATYBQwH0Af8EAAE2AUMB9AH/DAACTgFPAZcDYgHuAwQBBQgAAzsBYwJTAVUBqgMvAUkC
         WQFbAcAMAAM9AWgCXgFbAc0IAAQBAXoBbgFUAf8UAAM5AV0BvgG9Aa8B/QNfAfsDAgEDFAAB9AGpAQMB
@@ -819,48 +819,6 @@
   <metadata name="GSGrupoSanguino.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="GSNombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="GSApellido.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="GSRH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="GSGrupoSanguino.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="idDonante.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Apellido.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Cedula.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="FechadeNacimiento.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Sexo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Peso.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="GrupoSanguineo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="RH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="CentrodeDonacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="idDonante.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1115,7 +1073,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
         LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
         SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA0vAJAAJNU0Z0AUkBTAIBAQUB
-        AAE4AQIBOAECAZYBAAGWAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABWAECAgABLAEBAgABAQEAASAF
+        AAFIAQIBSAECAZYBAAGWAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABWAECAgABLAEBAgABAQEAASAF
         AAGAAfwBChEA/////1r//wD/AP8A/wD/AP8A/wAPAP////9a//8A/wD/AP8A/wD/AP8ADwD/////Wv//
         AP8A/wD/AP8A/wD/AA8A/////1r//wD/AP8A/wD/AP8A/wAPAP////9a//8A/wD/AP8A/wD/AP8ADwD/
         ////Wv//AP8A/wD/AP8A/wD/AA8A/////1r//wD/AP8A/wD/AP8A/wAPAP////9a//8A/wD/AP8A/wD/
@@ -11977,9 +11935,6 @@
   </data>
   <metadata name="tmrFotos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>95, 6</value>
-  </metadata>
-  <metadata name="tsHerramientas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>309, 9</value>
   </metadata>
   <metadata name="tsHerramientas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>309, 9</value>

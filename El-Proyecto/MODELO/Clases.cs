@@ -102,9 +102,20 @@
             if (i != -1)
                 baseDeDatosDonante.RemoveAt(i);
         }
-        public int Buscar(string id) 
+        public Donante BuscarPosicion(string id) 
         {
             int o=-1;
+            for (int i = 0; i < BaseDeDatosDonante.Count; i++)
+            {
+                if (BaseDeDatosDonante[i].Id_Donante == id)
+                    o = i;
+            }
+            Donante k=BaseDeDatosDonante[o];
+            return k;
+        }
+        public int Buscar(string id)
+        {
+            int o = -1;
             for (int i = 0; i < BaseDeDatosDonante.Count; i++)
             {
                 if (BaseDeDatosDonante[i].Id_Donante == id)
@@ -129,17 +140,15 @@
             BaseDeDatosDonante.Insert(pos,Nuevo);
         }
 
-        public Donante buscarDatosDonante(string idDonante, List<Donante> a)
+        public Donante buscarDatosDonante(string idDonante)
         {
             //Transformamos el arrayList a un tipo que implemente linQ
             //var clientela = baseDeDatosCliente.OfType<cliente>();
 
             //Usamos LinQ
-            var buscCliente = from Donante in a
-                              where Donante.Id_Donante == (idDonante)
-                              select Donante;
-
-
+            var buscCliente = from e in baseDeDatosDonante
+                              where e.Id_Donante == idDonante
+                              select e;
             Donante pepe = buscCliente.First();
             //foreach(cliente a in buscCliente)
             //{

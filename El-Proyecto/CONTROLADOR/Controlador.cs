@@ -11,7 +11,7 @@ namespace CONTROLADOR
         baseDeDatos datosBase = new baseDeDatos();
         public void verDatos(DataGridView dgvDatos)
         {
-            dgvDatos.Rows.Add(donante.Id_Donante, donante.Nombre, donante.Apellido, donante.Cedula, donante.F_Nac, donante.Sexo,donante.Peso, sangre.Grupo, sangre.Rh, donante.Cen_Donacion);
+            dgvDatos.Rows.Add(donante.Id_Donante, donante.Nombre, donante.Apellido, donante.Cedula, donante.F_Nac, donante.Sexo,donante.Peso, donante.Sangre.Grupo, donante.Sangre.Rh, donante.Cen_Donacion);
         }
         public void agregarDatos(Label ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula,DateTimePicker fecha ,RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre)
         {
@@ -21,10 +21,10 @@ namespace CONTROLADOR
             string cedul4 = cedula.Text;
             double pes0 = Convert.ToDouble(peso.Text);
             string fech4 = fecha.Text;
-            char genero='o';
-            string rh = RH.Text;
+            string rh = RH.Text.ToString();
             string centro = centroDonacion.Text;
             string grupoSangre = grupoSanguineo.Text;
+            char genero = 'o';
             if (femenino.Checked)
             {
                 genero = 'F';
@@ -43,10 +43,11 @@ namespace CONTROLADOR
             sangre.Rh = rh;
             donante.Cen_Donacion = centro;
             sangre.Grupo = grupoSangre;
+            donante.Sangre=sangre;
             datosBase.AddContact(donante);
             verDatos(dgvDatos);
             VerGrupoSanguineo(dgvSangre);
-            MessageBox.Show("Contacto Agregado");
+            MessageBox.Show("Donante Agregado");
         }
         public void VerGrupoSanguineo(DataGridView dgvDatos) 
         {
@@ -55,41 +56,16 @@ namespace CONTROLADOR
         }
         public void VerEnTextBox(TextBox ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion)
         {
-            int o;
             int u = datosBase.Buscar(ids.Text);
-            Donante k = datosBase.BaseDeDatosDonante[u];
-            Sangre s = k.Sangre;
+            Donante k = datosBase.buscarDatosDonante(ids.Text);
             ids.Text = k.Id_Donante;
             nombre.Text = k.Nombre;
             apellido.Text = k.Apellido;
             cedula.Text = k.Cedula;
             peso.Text = k.Peso.ToString();
             fecha.Value = k.F_Nac;
-            if (s.Rh.ToString() == "+")
-            {
-                RH.SelectedIndex = 0;
-            }
-            else if (s.Rh.ToString() == "-") 
-            {
-                RH.SelectedIndex = 1;
-            }
-            //-----------------------------------------
-            if (s.Grupo.ToString() == "O")
-            {
-                grupoSanguineo.SelectedIndex = 0;
-            }
-            else if (s.Rh.ToString() == "AB")
-            {
-                grupoSanguineo.SelectedIndex = 1;
-            }
-            else if (s.Rh.ToString() == "A")
-            {
-                grupoSanguineo.SelectedIndex = 2;
-            }
-            else if (s.Rh.ToString() == "B")
-            {
-                grupoSanguineo.SelectedIndex = 3;
-            }
+            RH.Text = k.Sangre.Rh.ToString();
+            grupoSanguineo.Text=k.Sangre.Grupo.ToString();
             centroDonacion.Text = k.Cen_Donacion;
             if (k.Sexo == 'F')
             {
@@ -111,7 +87,7 @@ namespace CONTROLADOR
             double pes0 = Convert.ToDouble(peso.Text);
             DateTime fech4 = fecha.Value;
             char genero = 'o';
-            string rh = RH.Text;
+            string rh = RH.Text.ToString();
             string centro = centroDonacion.Text;
             string grupoSangre = grupoSanguineo.Text;
             if (femenino.Checked)
@@ -123,6 +99,7 @@ namespace CONTROLADOR
                 genero = 'M';
             }
             Donante de=new Donante();
+            Sangre sa=new Sangre(); 
             de.Id_Donante = id;
             de.Nombre = name;
             de.Apellido = subname;
@@ -130,9 +107,10 @@ namespace CONTROLADOR
             de.Peso = pes0;
             de.F_Nac = Convert.ToDateTime(fech4);
             de.Sexo = genero;
-            de.Sangre.Rh = rh;
+            sa.Rh = rh;
             de.Cen_Donacion = centro;
-            de.Sangre.Grupo = grupoSangre;
+            sa.Grupo = grupoSangre;
+            de.Sangre=sa;
             datosBase.Modificar(id,name, subname,cedul4,fech4,genero,pes0,grupoSangre,rh,centro);
             dgvDatos.Rows.Insert(u, de);
             dgvSangre.Rows.Insert(u, de);

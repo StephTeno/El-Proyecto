@@ -266,7 +266,7 @@ namespace ElProyecto
         
         private void btnAcep_Click(object sender, EventArgs e)
         {
-            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbGrupo, cmbRh, txtCentro,dgvVerDonantes, dgvGrupoSanguineo);
+            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro,dgvVerDonantes, dgvGrupoSanguineo);
             lbl_Id.Text = GeneraNumero();
         }
 

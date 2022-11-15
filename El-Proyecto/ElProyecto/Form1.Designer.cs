@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Inicio", 5, 5);
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Quienes Somos", 4, 4);
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Página Principal", 8, 8, new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Registrar Donante", 0, 0);
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Modificar Datos", 3, 3);
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Consultar Donante", 2, 2);
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Donantes", 7, 7);
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Grupo Sanguineo", 1, 1);
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Ver los Donantes", 8, 8, new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode17});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Inicio", 5, 5);
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Quienes Somos", 4, 4);
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Página Principal", 8, 8, new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Registrar Donante", 0, 0);
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Modificar Datos", 3, 3);
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Consultar Donante", 2, 2);
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Donantes", 7, 7);
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Grupo Sanguineo", 1, 1);
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Ver los Donantes", 8, 8, new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSalirOficial = new System.Windows.Forms.Button();
@@ -250,66 +250,66 @@
             this.tvLista.LineColor = System.Drawing.Color.White;
             this.tvLista.Location = new System.Drawing.Point(1, 123);
             this.tvLista.Name = "tvLista";
-            treeNode10.ImageIndex = 5;
-            treeNode10.Name = "Inicio";
-            treeNode10.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode10.SelectedImageIndex = 5;
-            treeNode10.Text = "Inicio";
-            treeNode10.ToolTipText = "Inicio";
-            treeNode11.ImageIndex = 4;
-            treeNode11.Name = "QuienesSomos";
-            treeNode11.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode11.SelectedImageIndex = 4;
-            treeNode11.Text = "Quienes Somos";
-            treeNode11.ToolTipText = "Información";
-            treeNode12.ImageIndex = 8;
-            treeNode12.Name = "Principal";
-            treeNode12.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode12.SelectedImageIndex = 8;
-            treeNode12.Text = "Página Principal";
-            treeNode12.ToolTipText = "Página Principal (Ver inicio)";
-            treeNode13.ImageIndex = 0;
-            treeNode13.Name = "RegistrarDonante";
-            treeNode13.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode13.SelectedImageIndex = 0;
-            treeNode13.Text = "Registrar Donante";
-            treeNode13.ToolTipText = "Agregar un nuevo donante";
-            treeNode14.ImageIndex = 3;
-            treeNode14.Name = "ModificarDatos";
-            treeNode14.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode14.SelectedImageIndex = 3;
-            treeNode14.Text = "Modificar Datos";
-            treeNode14.ToolTipText = "Modificar datos de un Donante";
-            treeNode15.ImageIndex = 2;
-            treeNode15.Name = "ConsultarDonante";
-            treeNode15.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode15.SelectedImageIndex = 2;
-            treeNode15.Text = "Consultar Donante";
-            treeNode15.ToolTipText = "Encontrar un Donante";
-            treeNode16.ImageIndex = 7;
-            treeNode16.Name = "TodosDonantes";
-            treeNode16.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode16.SelectedImageIndex = 7;
-            treeNode16.Text = "Donantes";
-            treeNode16.ToolTipText = "Ver todos los donantes";
-            treeNode17.ImageIndex = 1;
-            treeNode17.Name = "VerPorGrupo";
-            treeNode17.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode17.SelectedImageIndex = 1;
-            treeNode17.Text = "Grupo Sanguineo";
-            treeNode17.ToolTipText = "Ver los donantes por grupo sanguineo";
-            treeNode18.ImageIndex = 8;
-            treeNode18.Name = "VerDonantes";
-            treeNode18.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            treeNode18.SelectedImageIndex = 8;
-            treeNode18.Text = "Ver los Donantes";
-            treeNode18.ToolTipText = "Lista de todos los donantes";
+            treeNode1.ImageIndex = 5;
+            treeNode1.Name = "Inicio";
+            treeNode1.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode1.SelectedImageIndex = 5;
+            treeNode1.Text = "Inicio";
+            treeNode1.ToolTipText = "Inicio";
+            treeNode2.ImageIndex = 4;
+            treeNode2.Name = "QuienesSomos";
+            treeNode2.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode2.SelectedImageIndex = 4;
+            treeNode2.Text = "Quienes Somos";
+            treeNode2.ToolTipText = "Información";
+            treeNode3.ImageIndex = 8;
+            treeNode3.Name = "Principal";
+            treeNode3.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode3.SelectedImageIndex = 8;
+            treeNode3.Text = "Página Principal";
+            treeNode3.ToolTipText = "Página Principal (Ver inicio)";
+            treeNode4.ImageIndex = 0;
+            treeNode4.Name = "RegistrarDonante";
+            treeNode4.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode4.SelectedImageIndex = 0;
+            treeNode4.Text = "Registrar Donante";
+            treeNode4.ToolTipText = "Agregar un nuevo donante";
+            treeNode5.ImageIndex = 3;
+            treeNode5.Name = "ModificarDatos";
+            treeNode5.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode5.SelectedImageIndex = 3;
+            treeNode5.Text = "Modificar Datos";
+            treeNode5.ToolTipText = "Modificar datos de un Donante";
+            treeNode6.ImageIndex = 2;
+            treeNode6.Name = "ConsultarDonante";
+            treeNode6.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode6.SelectedImageIndex = 2;
+            treeNode6.Text = "Consultar Donante";
+            treeNode6.ToolTipText = "Encontrar un Donante";
+            treeNode7.ImageIndex = 7;
+            treeNode7.Name = "TodosDonantes";
+            treeNode7.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode7.SelectedImageIndex = 7;
+            treeNode7.Text = "Donantes";
+            treeNode7.ToolTipText = "Ver todos los donantes";
+            treeNode8.ImageIndex = 1;
+            treeNode8.Name = "VerPorGrupo";
+            treeNode8.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode8.SelectedImageIndex = 1;
+            treeNode8.Text = "Grupo Sanguineo";
+            treeNode8.ToolTipText = "Ver los donantes por grupo sanguineo";
+            treeNode9.ImageIndex = 8;
+            treeNode9.Name = "VerDonantes";
+            treeNode9.NodeFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            treeNode9.SelectedImageIndex = 8;
+            treeNode9.Text = "Ver los Donantes";
+            treeNode9.ToolTipText = "Lista de todos los donantes";
             this.tvLista.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode18});
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode9});
             this.tvLista.SelectedImageIndex = 0;
             this.tvLista.ShowNodeToolTips = true;
             this.tvLista.Size = new System.Drawing.Size(166, 168);
@@ -509,9 +509,9 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(790, 38);
+            this.plModificarDatos.Location = new System.Drawing.Point(252, 410);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(609, 370);
+            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -1267,10 +1267,10 @@
             this.tpPrincipal.Controls.Add(this.cmbGrupo);
             this.tpPrincipal.Controls.Add(this.lblCentro);
             this.tpPrincipal.Controls.Add(this.txtCentro);
-            this.tpPrincipal.Location = new System.Drawing.Point(4, 24);
+            this.tpPrincipal.Location = new System.Drawing.Point(4, 25);
             this.tpPrincipal.Name = "tpPrincipal";
             this.tpPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPrincipal.Size = new System.Drawing.Size(517, 185);
+            this.tpPrincipal.Size = new System.Drawing.Size(517, 184);
             this.tpPrincipal.TabIndex = 1;
             this.tpPrincipal.Text = "Información para Donar";
             this.tpPrincipal.UseVisualStyleBackColor = true;
@@ -1777,7 +1777,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1470, 443);
+            this.ClientSize = new System.Drawing.Size(760, 415);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
