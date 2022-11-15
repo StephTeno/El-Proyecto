@@ -108,7 +108,13 @@
             this.btnBuscarConsultar = new System.Windows.Forms.Button();
             this.lbResultado = new System.Windows.Forms.ListBox();
             this.gbConsultar = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cbPeso = new System.Windows.Forms.CheckBox();
+            this.cbCentroDonacion = new System.Windows.Forms.CheckBox();
+            this.cbRH = new System.Windows.Forms.CheckBox();
+            this.cbGrupoSanguineo = new System.Windows.Forms.CheckBox();
+            this.cbId = new System.Windows.Forms.CheckBox();
+            this.cbApellido = new System.Windows.Forms.CheckBox();
+            this.cbNombre = new System.Windows.Forms.CheckBox();
             this.lblConsultarDonante = new System.Windows.Forms.Label();
             this.plRegistrarDonante = new System.Windows.Forms.Panel();
             this.btnCance = new System.Windows.Forms.Button();
@@ -509,9 +515,9 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(252, 410);
+            this.plModificarDatos.Location = new System.Drawing.Point(796, 12);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
+            this.plModificarDatos.Size = new System.Drawing.Size(15, 19);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -785,10 +791,10 @@
             this.tabPage2.Controls.Add(this.cmbGrupoSang);
             this.tabPage2.Controls.Add(this.lblCentroDonación);
             this.tabPage2.Controls.Add(this.txtCentroDonacion);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(517, 184);
+            this.tabPage2.Size = new System.Drawing.Size(517, 185);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Información para Donar";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -921,9 +927,9 @@
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(304, 410);
+            this.plConsultarDonante.Location = new System.Drawing.Point(782, 54);
             this.plConsultarDonante.Name = "plConsultarDonante";
-            this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
+            this.plConsultarDonante.Size = new System.Drawing.Size(576, 348);
             this.plConsultarDonante.TabIndex = 6;
             // 
             // btnBuscarConsultar
@@ -938,13 +944,14 @@
             this.btnBuscarConsultar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnBuscarConsultar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarConsultar.Image")));
             this.btnBuscarConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarConsultar.Location = new System.Drawing.Point(26, 229);
+            this.btnBuscarConsultar.Location = new System.Drawing.Point(19, 285);
             this.btnBuscarConsultar.Name = "btnBuscarConsultar";
             this.btnBuscarConsultar.Size = new System.Drawing.Size(113, 43);
             this.btnBuscarConsultar.TabIndex = 4;
             this.btnBuscarConsultar.Text = "CONSULTAR";
             this.btnBuscarConsultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscarConsultar.UseVisualStyleBackColor = false;
+            this.btnBuscarConsultar.Click += new System.EventHandler(this.btnBuscarConsultar_Click);
             // 
             // lbResultado
             // 
@@ -957,34 +964,91 @@
             // 
             // gbConsultar
             // 
-            this.gbConsultar.Controls.Add(this.checkedListBox1);
+            this.gbConsultar.Controls.Add(this.cbPeso);
+            this.gbConsultar.Controls.Add(this.cbCentroDonacion);
+            this.gbConsultar.Controls.Add(this.cbRH);
+            this.gbConsultar.Controls.Add(this.cbGrupoSanguineo);
+            this.gbConsultar.Controls.Add(this.cbId);
+            this.gbConsultar.Controls.Add(this.cbApellido);
+            this.gbConsultar.Controls.Add(this.cbNombre);
             this.gbConsultar.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.gbConsultar.Location = new System.Drawing.Point(13, 76);
+            this.gbConsultar.Location = new System.Drawing.Point(3, 65);
             this.gbConsultar.Name = "gbConsultar";
-            this.gbConsultar.Size = new System.Drawing.Size(140, 130);
+            this.gbConsultar.Size = new System.Drawing.Size(150, 161);
             this.gbConsultar.TabIndex = 2;
             this.gbConsultar.TabStop = false;
-            this.gbConsultar.Text = "Filtro de Busqueda";
+            this.gbConsultar.Text = "Busqueda";
             // 
-            // checkedListBox1
+            // cbPeso
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.Maroon;
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkedListBox1.ForeColor = System.Drawing.Color.White;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Nombre",
-            "Apellido",
-            "ID",
-            "Grupo Sanguineo",
-            "RH",
-            "Centro de Donación",
-            "Peso"});
-            this.checkedListBox1.Location = new System.Drawing.Point(3, 14);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(135, 112);
-            this.checkedListBox1.TabIndex = 0;
+            this.cbPeso.AutoSize = true;
+            this.cbPeso.Location = new System.Drawing.Point(6, 132);
+            this.cbPeso.Name = "cbPeso";
+            this.cbPeso.Size = new System.Drawing.Size(51, 20);
+            this.cbPeso.TabIndex = 7;
+            this.cbPeso.Text = "Peso";
+            this.cbPeso.UseVisualStyleBackColor = true;
+            // 
+            // cbCentroDonacion
+            // 
+            this.cbCentroDonacion.AutoSize = true;
+            this.cbCentroDonacion.Location = new System.Drawing.Point(6, 116);
+            this.cbCentroDonacion.Name = "cbCentroDonacion";
+            this.cbCentroDonacion.Size = new System.Drawing.Size(137, 20);
+            this.cbCentroDonacion.TabIndex = 6;
+            this.cbCentroDonacion.Text = "Centro de Donación";
+            this.cbCentroDonacion.UseVisualStyleBackColor = true;
+            // 
+            // cbRH
+            // 
+            this.cbRH.AutoSize = true;
+            this.cbRH.Location = new System.Drawing.Point(6, 98);
+            this.cbRH.Name = "cbRH";
+            this.cbRH.Size = new System.Drawing.Size(41, 20);
+            this.cbRH.TabIndex = 5;
+            this.cbRH.Text = "RH";
+            this.cbRH.UseVisualStyleBackColor = true;
+            // 
+            // cbGrupoSanguineo
+            // 
+            this.cbGrupoSanguineo.AutoSize = true;
+            this.cbGrupoSanguineo.Location = new System.Drawing.Point(6, 78);
+            this.cbGrupoSanguineo.Name = "cbGrupoSanguineo";
+            this.cbGrupoSanguineo.Size = new System.Drawing.Size(122, 20);
+            this.cbGrupoSanguineo.TabIndex = 3;
+            this.cbGrupoSanguineo.Text = "Grupo Sanguineo";
+            this.cbGrupoSanguineo.UseVisualStyleBackColor = true;
+            // 
+            // cbId
+            // 
+            this.cbId.AutoSize = true;
+            this.cbId.Location = new System.Drawing.Point(6, 57);
+            this.cbId.Name = "cbId";
+            this.cbId.Size = new System.Drawing.Size(37, 20);
+            this.cbId.TabIndex = 2;
+            this.cbId.Text = "ID";
+            this.cbId.UseVisualStyleBackColor = true;
+            // 
+            // cbApellido
+            // 
+            this.cbApellido.AutoSize = true;
+            this.cbApellido.Location = new System.Drawing.Point(6, 38);
+            this.cbApellido.Name = "cbApellido";
+            this.cbApellido.Size = new System.Drawing.Size(69, 20);
+            this.cbApellido.TabIndex = 1;
+            this.cbApellido.Text = "Apellido";
+            this.cbApellido.UseVisualStyleBackColor = true;
+            // 
+            // cbNombre
+            // 
+            this.cbNombre.AutoSize = true;
+            this.cbNombre.Location = new System.Drawing.Point(6, 22);
+            this.cbNombre.Name = "cbNombre";
+            this.cbNombre.Size = new System.Drawing.Size(69, 20);
+            this.cbNombre.TabIndex = 0;
+            this.cbNombre.Text = "Nombre";
+            this.cbNombre.UseVisualStyleBackColor = true;
+            this.cbNombre.CheckedChanged += new System.EventHandler(this.cbNombre_CheckedChanged);
             // 
             // lblConsultarDonante
             // 
@@ -1267,10 +1331,10 @@
             this.tpPrincipal.Controls.Add(this.cmbGrupo);
             this.tpPrincipal.Controls.Add(this.lblCentro);
             this.tpPrincipal.Controls.Add(this.txtCentro);
-            this.tpPrincipal.Location = new System.Drawing.Point(4, 25);
+            this.tpPrincipal.Location = new System.Drawing.Point(4, 24);
             this.tpPrincipal.Name = "tpPrincipal";
             this.tpPrincipal.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPrincipal.Size = new System.Drawing.Size(517, 184);
+            this.tpPrincipal.Size = new System.Drawing.Size(517, 185);
             this.tpPrincipal.TabIndex = 1;
             this.tpPrincipal.Text = "Información para Donar";
             this.tpPrincipal.UseVisualStyleBackColor = true;
@@ -1777,7 +1841,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(760, 415);
+            this.ClientSize = new System.Drawing.Size(1370, 456);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1813,6 +1877,7 @@
             this.plConsultarDonante.ResumeLayout(false);
             this.plConsultarDonante.PerformLayout();
             this.gbConsultar.ResumeLayout(false);
+            this.gbConsultar.PerformLayout();
             this.plRegistrarDonante.ResumeLayout(false);
             this.plRegistrarDonante.PerformLayout();
             this.tcInformacion.ResumeLayout(false);
@@ -1915,7 +1980,6 @@
         private Button btnBuscarConsultar;
         private ListBox lbResultado;
         private GroupBox gbConsultar;
-        private CheckedListBox checkedListBox1;
         private TableLayoutPanel tableLayoutPanel1;
         private ToolStrip tsHerramientas;
         private ToolStripSplitButton tsbPrincipal;
@@ -1966,5 +2030,12 @@
         private DataGridViewTextBoxColumn GSApellido;
         private DataGridViewTextBoxColumn GSRH;
         private DataGridViewTextBoxColumn GSGrupoSanguino;
+        private CheckBox cbNombre;
+        private CheckBox cbPeso;
+        private CheckBox cbCentroDonacion;
+        private CheckBox cbRH;
+        private CheckBox cbGrupoSanguineo;
+        private CheckBox cbId;
+        private CheckBox cbApellido;
     }
 }

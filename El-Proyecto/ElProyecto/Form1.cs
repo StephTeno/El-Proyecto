@@ -3,8 +3,16 @@ namespace ElProyecto
 {
     public partial class Form1 : Form
     {
+        static int darId = 1;
         Contrl contr = new Contrl();
         static int i, o;
+        List<string> listaNombres = new List<string>();
+        List<string> listaApellidos = new List<string>();
+        List<string> Listaids = new List<string>();
+        List<string> listaGruposSanguineos= new List<string>();
+        List<string> listaRhs = new List<string>();
+        List<string> listaCentrosDeDonación = new List<string>();
+        List<double> listaPesos = new List<double>();
         public Form1()
         {
             InitializeComponent();
@@ -266,8 +274,9 @@ namespace ElProyecto
         
         private void btnAcep_Click(object sender, EventArgs e)
         {
-            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro,dgvVerDonantes, dgvGrupoSanguineo);
-            lbl_Id.Text = GeneraNumero();
+            lbl_Id.Text= darId.ToString();
+            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro,dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids,listaGruposSanguineos, listaRhs,listaCentrosDeDonación,listaPesos);
+            darId++;
         }
 
         private void btnHecho_Click(object sender, EventArgs e)
@@ -283,6 +292,25 @@ namespace ElProyecto
             {
                 if (e.KeyCode == Keys.Enter)
                 { contr.VerEnTextBox(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion); txtNombre.Focus(); }
+            }
+        }
+
+        private void btnBuscarConsultar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void cbNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbNombre.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaNombres;
+
             }
         }
 

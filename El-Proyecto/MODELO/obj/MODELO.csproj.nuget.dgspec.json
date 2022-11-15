@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {}
+    "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\nueva nueva tarea\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
+    "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\nueva nueva tarea\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
+        "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\nueva nueva tarea\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
         "projectName": "MODELO",
-        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\obj\\",
+        "projectPath": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\nueva nueva tarea\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
+        "packagesPath": "C:\\Users\\Marlon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marlon\\Saved Games\\Ecchi Version Showcase\\tareaActualizada\\nueva nueva tarea\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marlon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

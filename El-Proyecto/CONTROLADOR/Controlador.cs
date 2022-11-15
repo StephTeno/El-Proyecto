@@ -5,6 +5,14 @@ namespace CONTROLADOR
 {
     public class Contrl
     {
+         int contador = 0;
+        List<string> listaNombres = new List<string>();
+        List<string> listaApellidos = new List<string>();
+        List<string> ids = new List<string>();
+        List<string> gruposSanguineos = new List<string>();
+        List<string> rhs = new List<string>();
+        List<string> centrosDeDonación = new List<string>();
+       List<double> pesos = new List<double>();
         static int idContador = 0, k=0;
         Donante donante=new Donante();
         Sangre sangre=new Sangre();
@@ -13,8 +21,9 @@ namespace CONTROLADOR
         {
             dgvDatos.Rows.Add(donante.Id_Donante, donante.Nombre, donante.Apellido, donante.Cedula, donante.F_Nac, donante.Sexo,donante.Peso, donante.Sangre.Grupo, donante.Sangre.Rh, donante.Cen_Donacion);
         }
-        public void agregarDatos(Label ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula,DateTimePicker fecha ,RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre)
+        public void agregarDatos(Label ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula,DateTimePicker fecha ,RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre, List<string> nombres, List<string> apelludos, List<string> idsuskas, List<string> grupoSangritas, List<string> rhs, List<string> centrosDeDonaciao, List<double> pesitas)
         {
+            contador++;
             string id = ids.Text;
             string name = nombre.Text;
             string subname = apellido.Text;
@@ -33,6 +42,13 @@ namespace CONTROLADOR
             {
                 genero = 'M';
             }
+            nombres.Add(name);
+            apelludos.Add(subname);
+            idsuskas.Add(id);
+            grupoSangritas.Add( grupoSangre); 
+            rhs.Add(rh);
+            centrosDeDonaciao.Add(centro);
+            pesitas.Add(pes0);
             donante.Id_Donante = id;
             donante.Nombre = name;
             donante.Apellido = subname;
@@ -47,6 +63,7 @@ namespace CONTROLADOR
             datosBase.AddContact(donante);
             verDatos(dgvDatos);
             VerGrupoSanguineo(dgvSangre);
+
             MessageBox.Show("Donante Agregado");
         }
         public void VerGrupoSanguineo(DataGridView dgvDatos) 
@@ -54,7 +71,7 @@ namespace CONTROLADOR
             dgvDatos.Rows.Add(donante.Nombre, donante.Apellido, sangre.Grupo, sangre.Rh);
 
         }
-        public void VerEnTextBox(TextBox ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion)
+        public void VerEnTextBox( TextBox ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion)
         {
             int u = datosBase.Buscar(ids.Text);
             Donante k = datosBase.buscarDatosDonante(ids.Text);
