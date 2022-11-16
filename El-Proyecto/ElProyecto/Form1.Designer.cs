@@ -105,7 +105,7 @@
             this.lblBusMod = new System.Windows.Forms.Label();
             this.lblModificar = new System.Windows.Forms.Label();
             this.plConsultarDonante = new System.Windows.Forms.Panel();
-            this.btnBuscarConsultar = new System.Windows.Forms.Button();
+            this.btnBuscarConsultarSalir = new System.Windows.Forms.Button();
             this.lbResultado = new System.Windows.Forms.ListBox();
             this.gbConsultar = new System.Windows.Forms.GroupBox();
             this.cbPeso = new System.Windows.Forms.CheckBox();
@@ -353,7 +353,7 @@
             this.plVerGrupoSanguineo.Controls.Add(this.dgvGrupoSanguineo);
             this.plVerGrupoSanguineo.Controls.Add(this.lblVerGrupoSanguineo);
             this.plVerGrupoSanguineo.ForeColor = System.Drawing.Color.Black;
-            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(227, 410);
+            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(252, 410);
             this.plVerGrupoSanguineo.Name = "plVerGrupoSanguineo";
             this.plVerGrupoSanguineo.Size = new System.Drawing.Size(20, 20);
             this.plVerGrupoSanguineo.TabIndex = 11;
@@ -517,7 +517,7 @@
             this.plModificarDatos.Controls.Add(this.lblModificar);
             this.plModificarDatos.Location = new System.Drawing.Point(796, 12);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(15, 19);
+            this.plModificarDatos.Size = new System.Drawing.Size(562, 375);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -548,6 +548,7 @@
             this.btnCancelar2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar2.UseVisualStyleBackColor = false;
+            this.btnCancelar2.Click += new System.EventHandler(this.btnCancelar2_Click);
             // 
             // btnHecho
             // 
@@ -898,6 +899,7 @@
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(121, 24);
             this.cmbBuscar.TabIndex = 3;
+            this.cmbBuscar.Text = "ID";
             // 
             // lblBusMod
             // 
@@ -923,35 +925,35 @@
             // 
             // plConsultarDonante
             // 
-            this.plConsultarDonante.Controls.Add(this.btnBuscarConsultar);
+            this.plConsultarDonante.Controls.Add(this.btnBuscarConsultarSalir);
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(782, 54);
+            this.plConsultarDonante.Location = new System.Drawing.Point(228, 410);
             this.plConsultarDonante.Name = "plConsultarDonante";
-            this.plConsultarDonante.Size = new System.Drawing.Size(576, 348);
+            this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
             this.plConsultarDonante.TabIndex = 6;
             // 
-            // btnBuscarConsultar
+            // btnBuscarConsultarSalir
             // 
-            this.btnBuscarConsultar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBuscarConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarConsultar.FlatAppearance.BorderSize = 0;
-            this.btnBuscarConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.btnBuscarConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
-            this.btnBuscarConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarConsultar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarConsultar.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnBuscarConsultar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarConsultar.Image")));
-            this.btnBuscarConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarConsultar.Location = new System.Drawing.Point(19, 285);
-            this.btnBuscarConsultar.Name = "btnBuscarConsultar";
-            this.btnBuscarConsultar.Size = new System.Drawing.Size(113, 43);
-            this.btnBuscarConsultar.TabIndex = 4;
-            this.btnBuscarConsultar.Text = "CONSULTAR";
-            this.btnBuscarConsultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarConsultar.UseVisualStyleBackColor = false;
-            this.btnBuscarConsultar.Click += new System.EventHandler(this.btnBuscarConsultar_Click);
+            this.btnBuscarConsultarSalir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuscarConsultarSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarConsultarSalir.FlatAppearance.BorderSize = 0;
+            this.btnBuscarConsultarSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.btnBuscarConsultarSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnBuscarConsultarSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarConsultarSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarConsultarSalir.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnBuscarConsultarSalir.Image = global::ElProyecto.Properties.Resources.Cancelar;
+            this.btnBuscarConsultarSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarConsultarSalir.Location = new System.Drawing.Point(19, 285);
+            this.btnBuscarConsultarSalir.Name = "btnBuscarConsultarSalir";
+            this.btnBuscarConsultarSalir.Size = new System.Drawing.Size(127, 43);
+            this.btnBuscarConsultarSalir.TabIndex = 4;
+            this.btnBuscarConsultarSalir.Text = "CANCELAR";
+            this.btnBuscarConsultarSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarConsultarSalir.UseVisualStyleBackColor = false;
+            this.btnBuscarConsultarSalir.Click += new System.EventHandler(this.btnBuscarConsultar_Click);
             // 
             // lbResultado
             // 
@@ -988,6 +990,7 @@
             this.cbPeso.TabIndex = 7;
             this.cbPeso.Text = "Peso";
             this.cbPeso.UseVisualStyleBackColor = true;
+            this.cbPeso.CheckedChanged += new System.EventHandler(this.cbPeso_CheckedChanged);
             // 
             // cbCentroDonacion
             // 
@@ -998,6 +1001,7 @@
             this.cbCentroDonacion.TabIndex = 6;
             this.cbCentroDonacion.Text = "Centro de Donación";
             this.cbCentroDonacion.UseVisualStyleBackColor = true;
+            this.cbCentroDonacion.CheckedChanged += new System.EventHandler(this.cbCentroDonacion_CheckedChanged);
             // 
             // cbRH
             // 
@@ -1008,6 +1012,7 @@
             this.cbRH.TabIndex = 5;
             this.cbRH.Text = "RH";
             this.cbRH.UseVisualStyleBackColor = true;
+            this.cbRH.CheckedChanged += new System.EventHandler(this.cbRH_CheckedChanged);
             // 
             // cbGrupoSanguineo
             // 
@@ -1018,6 +1023,7 @@
             this.cbGrupoSanguineo.TabIndex = 3;
             this.cbGrupoSanguineo.Text = "Grupo Sanguineo";
             this.cbGrupoSanguineo.UseVisualStyleBackColor = true;
+            this.cbGrupoSanguineo.CheckedChanged += new System.EventHandler(this.cbGrupoSanguineo_CheckedChanged);
             // 
             // cbId
             // 
@@ -1028,6 +1034,7 @@
             this.cbId.TabIndex = 2;
             this.cbId.Text = "ID";
             this.cbId.UseVisualStyleBackColor = true;
+            this.cbId.CheckedChanged += new System.EventHandler(this.cbId_CheckedChanged);
             // 
             // cbApellido
             // 
@@ -1038,6 +1045,7 @@
             this.cbApellido.TabIndex = 1;
             this.cbApellido.Text = "Apellido";
             this.cbApellido.UseVisualStyleBackColor = true;
+            this.cbApellido.CheckedChanged += new System.EventHandler(this.cbApellido_CheckedChanged);
             // 
             // cbNombre
             // 
@@ -1977,7 +1985,7 @@
         private TextBox txtCentroDonacion;
         private Panel plConsultarDonante;
         private Label lblConsultarDonante;
-        private Button btnBuscarConsultar;
+        private Button btnBuscarConsultarSalir;
         private ListBox lbResultado;
         private GroupBox gbConsultar;
         private TableLayoutPanel tableLayoutPanel1;

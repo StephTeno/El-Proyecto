@@ -140,13 +140,13 @@
             BaseDeDatosDonante.Insert(pos,Nuevo);
         }
 
-        public Donante buscarDatosDonante(string idDonante)
+        public Donante buscarDatosDonante(string idDonante, List<Donante> a)
         {
             //Transformamos el arrayList a un tipo que implemente linQ
             //var clientela = baseDeDatosCliente.OfType<cliente>();
 
             //Usamos LinQ
-            var buscCliente = from e in baseDeDatosDonante
+            var buscCliente = from e in a
                               where e.Id_Donante == idDonante
                               select e;
             Donante pepe = buscCliente.First();
@@ -156,5 +156,6 @@
             //}
             return pepe;
         }
+        
     }
 }

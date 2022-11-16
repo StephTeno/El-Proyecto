@@ -281,7 +281,8 @@ namespace ElProyecto
 
         private void btnHecho_Click(object sender, EventArgs e)
         {
-            contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
+            //contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
+            //contr.buscarDonante(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes);
         }
 
         private void plRegistrarDonante_Paint(object sender, PaintEventArgs e) { }
@@ -297,7 +298,7 @@ namespace ElProyecto
 
         private void btnBuscarConsultar_Click(object sender, EventArgs e)
         {
-           
+            Inicio();
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -306,12 +307,119 @@ namespace ElProyecto
 
         private void cbNombre_CheckedChanged(object sender, EventArgs e)
         {
+            cbApellido.Checked = false;
+            cbId.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbRH.Checked = false;
+            cbCentroDonacion.Checked = false;
+            cbPeso.Checked = false;
             if (cbNombre.Checked)
             {
                 lbResultado.DataSource = null;
                 lbResultado.DataSource = listaNombres;
 
             }
+        }
+
+        private void cbApellido_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbId.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbRH.Checked = false;
+            cbCentroDonacion.Checked = false;
+            cbPeso.Checked = false;
+            if (cbApellido.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaApellidos;
+
+            }
+        }
+
+        private void cbId_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbApellido.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbRH.Checked = false;
+            cbCentroDonacion.Checked = false;
+            cbPeso.Checked = false;
+            if (cbId.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = Listaids;
+
+            }
+        }
+
+        private void cbGrupoSanguineo_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbApellido.Checked = false;
+            cbId.Checked = false;
+            cbRH.Checked = false;
+            cbCentroDonacion.Checked = false;
+            cbPeso.Checked = false;
+            if (cbGrupoSanguineo.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaGruposSanguineos;
+
+            }
+        }
+
+        private void cbRH_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbApellido.Checked = false;
+            cbId.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbCentroDonacion.Checked = false;
+            cbPeso.Checked = false;
+            if (cbRH.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaRhs;
+
+            }
+        }
+
+        private void cbCentroDonacion_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbApellido.Checked = false;
+            cbId.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbRH.Checked = false;
+            cbPeso.Checked = false;
+            if (cbCentroDonacion.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaCentrosDeDonación;
+
+            }
+        }
+
+        private void cbPeso_CheckedChanged(object sender, EventArgs e)
+        {
+            cbNombre.Checked = false;
+            cbApellido.Checked = false;
+            cbId.Checked = false;
+            cbGrupoSanguineo.Checked = false;
+            cbRH.Checked = false;
+            cbCentroDonacion.Checked = false;
+            if (cbPeso.Checked)
+            {
+                lbResultado.DataSource = null;
+                lbResultado.DataSource = listaPesos;
+
+            }
+        }
+
+        private void btnCancelar2_Click(object sender, EventArgs e)
+        {
+            Inicio();
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };

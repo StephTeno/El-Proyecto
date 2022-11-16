@@ -118,3 +118,27 @@ C:\Users\Marlon\Saved Games\Ecchi Version Showcase\tareaActualizada\nueva nueva 
 C:\Users\Marlon\Saved Games\Ecchi Version Showcase\tareaActualizada\nueva nueva tarea\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.pdb
 C:\Users\Marlon\Saved Games\Ecchi Version Showcase\tareaActualizada\nueva nueva tarea\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.genruntimeconfig.cache
 C:\Users\Marlon\Saved Games\Ecchi Version Showcase\tareaActualizada\nueva nueva tarea\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ref\ElProyecto.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\ElProyecto.exe
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\ElProyecto.deps.json
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\ElProyecto.runtimeconfig.json
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\ElProyecto.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\ElProyecto.pdb
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\CONTROLADOR.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\MODELO.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\CONTROLADOR.pdb
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\bin\Debug\net6.0-windows\MODELO.pdb
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.csproj.AssemblyReference.cache
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.Form1.resources
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.Progreso.resources
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.Properties.Resources.resources
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.csproj.GenerateResource.cache
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.AssemblyInfoInputs.cache
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.AssemblyInfo.cs
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.csproj.CopyComplete
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\refint\ElProyecto.dll
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.pdb
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ElProyecto.genruntimeconfig.cache
+C:\Users\Marlon\Saved Games\versionVersionActualizadaTrabajo\StephTeno\El-Proyecto\El-Proyecto\ElProyecto\obj\Debug\net6.0-windows\ref\ElProyecto.dll
