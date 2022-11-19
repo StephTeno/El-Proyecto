@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {}
+    "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {
+    "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+        "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
         "projectName": "CONTROLADOR",
-        "projectPath": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
+        "projectPath": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\CONTROLADOR.csproj",
         "packagesPath": "C:\\Users\\Marlon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\obj\\",
+        "outputPath": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\CONTROLADOR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marlon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
-                "projectPath": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj"
+              "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
+                "projectPath": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
+    "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
+        "projectUniqueName": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
         "projectName": "MODELO",
-        "projectPath": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
+        "projectPath": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\MODELO.csproj",
         "packagesPath": "C:\\Users\\Marlon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marlon\\Saved Games\\versionVersionActualizadaTrabajo\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\obj\\",
+        "outputPath": "C:\\Users\\Marlon\\Saved Games\\VersionDeVerdadACTUALIZADA\\StephTeno\\El-Proyecto\\El-Proyecto\\MODELO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marlon\\AppData\\Roaming\\NuGet\\NuGet.Config",

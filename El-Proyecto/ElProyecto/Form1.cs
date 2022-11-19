@@ -76,6 +76,7 @@ namespace ElProyecto
             plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
+            //plImagenDonante.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible = false;
@@ -84,6 +85,7 @@ namespace ElProyecto
         {
             plInicio.Visible = false;
             plQuienesSomos.Visible = true;
+            //plImagenDonante.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = false;
@@ -99,6 +101,7 @@ namespace ElProyecto
             plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = true;
             plModificarDatos.Visible = false;
+            //plImagenDonante.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible = false;
@@ -112,6 +115,7 @@ namespace ElProyecto
             plQuienesSomos.Visible = false;
             plRegistrarDonante.Visible = false;
             plModificarDatos.Visible = true;
+            //plImagenDonante.Visible = false;
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible = false;
@@ -126,6 +130,7 @@ namespace ElProyecto
             plModificarDatos.Visible = false;
             plConsultarDonante.Visible = true;
             plVerDonantes.Visible = false;
+            //plImagenDonante.Visible = false;
             plVerGrupoSanguineo.Visible = false;
             plConsultarDonante.Size = new Size(592, 370);
             plConsultarDonante.Location = new Point(170, 38);
@@ -139,6 +144,7 @@ namespace ElProyecto
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = true;
             plVerGrupoSanguineo.Visible = false;
+            //plImagenDonante.Visible = false;
             plVerDonantes.Size = new Size(592, 370);
             plVerDonantes.Location = new Point(170, 38);
         }
@@ -151,8 +157,22 @@ namespace ElProyecto
             plConsultarDonante.Visible = false;
             plVerDonantes.Visible = false;
             plVerGrupoSanguineo.Visible=true;
+           // plImagenDonante.Visible = false;
             plVerGrupoSanguineo.Size = new Size(592, 370);
             plVerGrupoSanguineo.Location = new Point(170, 38);
+        }
+        public void verFotos()
+        {
+            //plInicio.Visible = false;
+            //plQuienesSomos.Visible = false;
+            //plRegistrarDonante.Visible = false;
+            //plModificarDatos.Visible = false;
+            //plConsultarDonante.Visible = false;
+            //plVerDonantes.Visible = false;
+            //plVerGrupoSanguineo.Visible = false;
+            //plImagenDonante.Visible = true;
+            //plImagenDonante.Size = new Size(592, 370);
+            //plImagenDonante.Location = new Point(170, 38);
         }
         public void Salir()
         {
@@ -281,9 +301,16 @@ namespace ElProyecto
 
         private void btnHecho_Click(object sender, EventArgs e)
         {
+
+            int busqueda=Convert.ToInt32(txtABuscar.Text)-1;
+            lblId2.Text = busqueda+1.ToString();
+            contr.RemoverContacto(busqueda, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos,imglFoos);
+
+            contr.agregarDatos(lblId2, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos);
             //contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
             //contr.buscarDonante(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes);
-        }
+         lblId2.Visible = true;
+         }
 
         private void plRegistrarDonante_Paint(object sender, PaintEventArgs e) { }
 
@@ -420,6 +447,62 @@ namespace ElProyecto
         private void btnCancelar2_Click(object sender, EventArgs e)
         {
             Inicio();
+        }
+
+        private void txtABuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBuscar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarFotito_Click(object sender, EventArgs e)
+        {
+            System.Drawing.Image myImage;
+            OpenFileDialog ofd= new OpenFileDialog();
+            ofd.Filter = "Imagenes|*.jpg;*.png";
+            ofd.Title = "Abriendo Imagen";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                string urlArchivo = ofd.FileName;
+                string nombre = ofd.SafeFileName;
+                pbUserImage.Load(urlArchivo);
+             myImage=Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal) +urlArchivo);
+                imglFoos.Images.Add(myImage);
+            }
+            MessageBox.Show("Imagen Agregada");
+        }
+
+        private void btnAgregarFoto_Click(object sender, EventArgs e)
+        {
+            
+            System.Drawing.Image myImage;
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Imagenes|*.jpg;*.png";
+            ofd.Title = "Abriendo Imagen";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                string urlArchivo = ofd.FileName;
+                string nombre = ofd.SafeFileName;
+                pbPerfil.Load(urlArchivo);
+                //myImage = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal) + urlArchivo);
+                //imglFoos.Images.Add(myImage);
+
+            }
+            MessageBox.Show("Imagen Agregada");
+        }
+
+        private void imagenesDonadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarImagenDonante_Click(object sender, EventArgs e)
+        {
+          
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };

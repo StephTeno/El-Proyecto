@@ -5,23 +5,26 @@ namespace CONTROLADOR
 {
     public class Contrl
     {
-         int contador = 0;
+        int contador = 0;
+        //Varias listas para poder hacer busqueda de datos individualmente
         List<string> listaNombres = new List<string>();
         List<string> listaApellidos = new List<string>();
         List<string> ids = new List<string>();
         List<string> gruposSanguineos = new List<string>();
         List<string> rhs = new List<string>();
         List<string> centrosDeDonación = new List<string>();
-       List<double> pesos = new List<double>();
-        static int idContador = 0, k=0;
-        Donante donante=new Donante();
-        Sangre sangre=new Sangre();
+        List<double> pesos = new List<double>();
+        static int idContador = 0, k = 0;
+        Donante donante = new Donante();
+        Sangre sangre = new Sangre();
         baseDeDatos datosBase = new baseDeDatos();
+        //Funcion para poder ver los datos en la Data Grid View
         public void verDatos(DataGridView dgvDatos)
         {
-            dgvDatos.Rows.Add(donante.Id_Donante, donante.Nombre, donante.Apellido, donante.Cedula, donante.F_Nac, donante.Sexo,donante.Peso, donante.Sangre.Grupo, donante.Sangre.Rh, donante.Cen_Donacion);
+            dgvDatos.Rows.Add(donante.Id_Donante, donante.Nombre, donante.Apellido, donante.Cedula, donante.F_Nac, donante.Sexo, donante.Peso, donante.Sangre.Grupo, donante.Sangre.Rh, donante.Cen_Donacion);
         }
-        public void agregarDatos(Label ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula,DateTimePicker fecha ,RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre, List<string> nombres, List<string> apelludos, List<string> idsuskas, List<string> grupoSangritas, List<string> rhs, List<string> centrosDeDonaciao, List<double> pesitas)
+        //Funcion para agregar datos a la Data Grid View
+        public void agregarDatos(Label ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre, List<string> nombres, List<string> apelludos, List<string> idsuskas, List<string> grupoSangritas, List<string> rhs, List<string> centrosDeDonaciao, List<double> pesitas)
         {
             contador++;
             string id = ids.Text;
@@ -45,7 +48,7 @@ namespace CONTROLADOR
             nombres.Add(name);
             apelludos.Add(subname);
             idsuskas.Add(id);
-            grupoSangritas.Add( grupoSangre); 
+            grupoSangritas.Add(grupoSangre);
             rhs.Add(rh);
             centrosDeDonaciao.Add(centro);
             pesitas.Add(pes0);
@@ -54,22 +57,38 @@ namespace CONTROLADOR
             donante.Apellido = subname;
             donante.Cedula = cedul4;
             donante.Peso = pes0;
-            donante.F_Nac =Convert.ToDateTime(fech4);
+            donante.F_Nac = Convert.ToDateTime(fech4);
             donante.Sexo = genero;
             sangre.Rh = rh;
             donante.Cen_Donacion = centro;
             sangre.Grupo = grupoSangre;
-            donante.Sangre=sangre;
+            donante.Sangre = sangre;
             datosBase.AddContact(donante);
             verDatos(dgvDatos);
             VerGrupoSanguineo(dgvSangre);
 
             MessageBox.Show("Donante Agregado");
         }
-        public void VerGrupoSanguineo(DataGridView dgvDatos) 
+       
+        //Funcion para agregar datos a la data grid view de los grupos sanguineo
+        public void VerGrupoSanguineo(DataGridView dgvDatos)
         {
             dgvDatos.Rows.Add(donante.Nombre, donante.Apellido, sangre.Grupo, sangre.Rh);
 
+        }
+        public void modificarDatos(Label ids, TextBox idBuscando, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion, DataGridView dgvDatos, DataGridView dgvSangre, DataGridView modificar)
+        {
+            int buscardor = datosBase.Buscar(idBuscando.Text);
+
+        }
+        //Funcion que le permite modificar los datos al usuario
+        public void RemoverContacto(int i, DataGridView dgvDatosDatitos, DataGridView dgvDatosSangrita, List<string> nombres, List<string> apelludos, List<string> idsuskas, List<string> grupoSangritas, List<string> rhs, List<string> centrosDeDonaciao, List<double> pesitas, ImageList imageList)
+        {
+            imageList.Images.RemoveAt(i);
+            nombres.RemoveAt(i); apelludos.RemoveAt(i); idsuskas.RemoveAt(i); grupoSangritas.RemoveAt(i); rhs.RemoveAt(i);centrosDeDonaciao.RemoveAt(i); pesitas.RemoveAt(i);
+            dgvDatosDatitos.Rows.RemoveAt(i);
+            datosBase.RemoverContacto(i);
+            MessageBox.Show("Donante Eliminado");
         }
         public void VerEnTextBox( TextBox ids, TextBox nombre, TextBox apellido, MaskedTextBox cedula, DateTimePicker fecha, RadioButton femenino, RadioButton masculino, MaskedTextBox peso, ComboBox RH, ComboBox grupoSanguineo, TextBox centroDonacion)
         {

@@ -76,7 +76,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnAgregarFotito = new System.Windows.Forms.Button();
-            this.pbAgregarFotito = new System.Windows.Forms.PictureBox();
+            this.pbUserImage = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mtxtCedula = new System.Windows.Forms.MaskedTextBox();
             this.lblSexo = new System.Windows.Forms.Label();
@@ -87,12 +87,13 @@
             this.lblFechaNac = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblId2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Id_Mo = new System.Windows.Forms.Label();
             this.RH_Mo = new System.Windows.Forms.Label();
@@ -180,6 +181,8 @@
             this.tsbSalir = new System.Windows.Forms.ToolStripButton();
             this.rtextQuienesSomos = new System.Windows.Forms.RichTextBox();
             this.plQuienesSomos = new System.Windows.Forms.Panel();
+            this.ofp = new System.Windows.Forms.OpenFileDialog();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plVerGrupoSanguineo.SuspendLayout();
@@ -189,7 +192,7 @@
             this.plModificarDatos.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAgregarFotito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.plConsultarDonante.SuspendLayout();
             this.gbConsultar.SuspendLayout();
@@ -416,7 +419,7 @@
             this.plVerDonantes.Controls.Add(this.dgvVerDonantes);
             this.plVerDonantes.Controls.Add(this.lblVerDonantes);
             this.plVerDonantes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.plVerDonantes.Location = new System.Drawing.Point(278, 410);
+            this.plVerDonantes.Location = new System.Drawing.Point(202, 410);
             this.plVerDonantes.Name = "plVerDonantes";
             this.plVerDonantes.Size = new System.Drawing.Size(20, 20);
             this.plVerDonantes.TabIndex = 10;
@@ -515,9 +518,9 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(796, 12);
+            this.plModificarDatos.Location = new System.Drawing.Point(304, 410);
             this.plModificarDatos.Name = "plModificarDatos";
-            this.plModificarDatos.Size = new System.Drawing.Size(562, 375);
+            this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
             this.plModificarDatos.TabIndex = 6;
             this.plModificarDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.plModificarDatos_Paint);
             // 
@@ -527,6 +530,7 @@
             this.txtABuscar.Name = "txtABuscar";
             this.txtABuscar.Size = new System.Drawing.Size(197, 21);
             this.txtABuscar.TabIndex = 7;
+            this.txtABuscar.TextChanged += new System.EventHandler(this.txtABuscar_TextChanged);
             this.txtABuscar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtABuscar_KeyDown);
             // 
             // btnCancelar2
@@ -584,7 +588,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.btnAgregarFotito);
-            this.tabPage1.Controls.Add(this.pbAgregarFotito);
+            this.tabPage1.Controls.Add(this.pbUserImage);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.mtxtCedula);
             this.tabPage1.Controls.Add(this.lblSexo);
@@ -595,11 +599,11 @@
             this.tabPage1.Controls.Add(this.lblFechaNac);
             this.tabPage1.Controls.Add(this.lblPeso);
             this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtApellido);
+            this.tabPage1.Controls.Add(this.txtNombre);
             this.tabPage1.Controls.Add(this.lblCedula);
             this.tabPage1.Controls.Add(this.lblApellido);
-            this.tabPage1.Controls.Add(this.txtApellido);
             this.tabPage1.Controls.Add(this.lblNombre);
-            this.tabPage1.Controls.Add(this.txtNombre);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -617,20 +621,21 @@
             this.btnAgregarFotito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarFotito.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregarFotito.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarFotito.Location = new System.Drawing.Point(422, 61);
+            this.btnAgregarFotito.Location = new System.Drawing.Point(423, 20);
             this.btnAgregarFotito.Name = "btnAgregarFotito";
             this.btnAgregarFotito.Size = new System.Drawing.Size(75, 51);
             this.btnAgregarFotito.TabIndex = 19;
             this.btnAgregarFotito.Text = "Agregar\r\nFoto";
             this.btnAgregarFotito.UseVisualStyleBackColor = false;
+            this.btnAgregarFotito.Click += new System.EventHandler(this.btnAgregarFotito_Click);
             // 
-            // pbAgregarFotito
+            // pbUserImage
             // 
-            this.pbAgregarFotito.Location = new System.Drawing.Point(280, 20);
-            this.pbAgregarFotito.Name = "pbAgregarFotito";
-            this.pbAgregarFotito.Size = new System.Drawing.Size(128, 128);
-            this.pbAgregarFotito.TabIndex = 18;
-            this.pbAgregarFotito.TabStop = false;
+            this.pbUserImage.Location = new System.Drawing.Point(280, 20);
+            this.pbUserImage.Name = "pbUserImage";
+            this.pbUserImage.Size = new System.Drawing.Size(128, 128);
+            this.pbUserImage.TabIndex = 18;
+            this.pbUserImage.TabStop = false;
             // 
             // label1
             // 
@@ -735,6 +740,20 @@
             this.textBox1.Size = new System.Drawing.Size(0, 21);
             this.textBox1.TabIndex = 6;
             // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(82, 43);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(165, 21);
+            this.txtApellido.TabIndex = 2;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(82, 16);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(165, 21);
+            this.txtNombre.TabIndex = 0;
+            // 
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
@@ -757,13 +776,6 @@
             this.lblApellido.TabIndex = 3;
             this.lblApellido.Text = "Apellido:";
             // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(82, 43);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(165, 21);
-            this.txtApellido.TabIndex = 2;
-            // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
@@ -775,15 +787,9 @@
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(82, 16);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(165, 21);
-            this.txtNombre.TabIndex = 0;
-            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lblId2);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.Id_Mo);
             this.tabPage2.Controls.Add(this.RH_Mo);
@@ -799,6 +805,18 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Información para Donar";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblId2
+            // 
+            this.lblId2.AutoSize = true;
+            this.lblId2.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblId2.ForeColor = System.Drawing.Color.Maroon;
+            this.lblId2.Location = new System.Drawing.Point(57, 27);
+            this.lblId2.Name = "lblId2";
+            this.lblId2.Size = new System.Drawing.Size(40, 15);
+            this.lblId2.TabIndex = 10;
+            this.lblId2.Text = "label2";
+            this.lblId2.Visible = false;
             // 
             // label7
             // 
@@ -899,7 +917,8 @@
             this.cmbBuscar.Name = "cmbBuscar";
             this.cmbBuscar.Size = new System.Drawing.Size(121, 24);
             this.cmbBuscar.TabIndex = 3;
-            this.cmbBuscar.Text = "ID";
+            this.cmbBuscar.Text = "Id";
+            this.cmbBuscar.SelectedIndexChanged += new System.EventHandler(this.cmbBuscar_SelectedIndexChanged);
             // 
             // lblBusMod
             // 
@@ -1076,7 +1095,7 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(202, 410);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(278, 410);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
             this.plRegistrarDonante.Size = new System.Drawing.Size(20, 20);
             this.plRegistrarDonante.TabIndex = 1;
@@ -1175,6 +1194,7 @@
             this.btnAgregarFoto.TabIndex = 17;
             this.btnAgregarFoto.Text = "Agregar\r\nFoto";
             this.btnAgregarFoto.UseVisualStyleBackColor = false;
+            this.btnAgregarFoto.Click += new System.EventHandler(this.btnAgregarFoto_Click);
             // 
             // pbPerfil
             // 
@@ -1844,12 +1864,16 @@
             this.plQuienesSomos.Size = new System.Drawing.Size(20, 20);
             this.plQuienesSomos.TabIndex = 12;
             // 
+            // ofp
+            // 
+            this.ofp.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1370, 456);
+            this.ClientSize = new System.Drawing.Size(763, 408);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1879,7 +1903,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAgregarFotito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.plConsultarDonante.ResumeLayout(false);
@@ -1956,33 +1980,6 @@
         private Button btnAcep;
         private Panel plModificarDatos;
         private Label lblModificar;
-        private ComboBox cmbBuscar;
-        private Label lblBusMod;
-        private Button btnCancelar2;
-        private Button btnHecho;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private Label lblSexo;
-        private RadioButton rbMas;
-        private RadioButton rbFem;
-        private DateTimePicker dtpFechaNac;
-        private Label lblFechaNac;
-        private Label lblPeso;
-        private TextBox textBox1;
-        private Label lblCedula;
-        private Label lblApellido;
-        private TextBox txtApellido;
-        private Label lblNombre;
-        private TextBox txtNombre;
-        private TabPage tabPage2;
-        private Label label7;
-        private Label Id_Mo;
-        private Label RH_Mo;
-        private ComboBox cmb_RH;
-        private Label lblGrupoSang;
-        private ComboBox cmbGrupoSang;
-        private Label lblCentroDonación;
-        private TextBox txtCentroDonacion;
         private Panel plConsultarDonante;
         private Label lblConsultarDonante;
         private Button btnBuscarConsultarSalir;
@@ -2005,9 +2002,6 @@
         private ToolStripButton tsbSalir;
         private MaskedTextBox mtxtCed;
         private MaskedTextBox mtxtPe;
-        private MaskedTextBox mtxtCedula;
-        private MaskedTextBox mtxtPeso;
-        private TextBox txtABuscar;
         private Panel plVerDonantes;
         private DataGridView dgvVerDonantes;
         private Label lblVerDonantes;
@@ -2019,9 +2013,6 @@
         private RichTextBox rtextQuienesSomos;
         private Panel plQuienesSomos;
         private Label lblLbs;
-        private Label label1;
-        private Button btnAgregarFotito;
-        private PictureBox pbAgregarFotito;
         private Button btnAgregarFoto;
         private PictureBox pbPerfil;
         private DataGridViewTextBoxColumn idDonante;
@@ -2045,5 +2036,41 @@
         private CheckBox cbGrupoSanguineo;
         private CheckBox cbId;
         private CheckBox cbApellido;
+        private TextBox txtABuscar;
+        private Button btnCancelar2;
+        private Button btnHecho;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Button btnAgregarFotito;
+        private PictureBox pbUserImage;
+        private Label label1;
+        private MaskedTextBox mtxtCedula;
+        private Label lblSexo;
+        private MaskedTextBox mtxtPeso;
+        private RadioButton rbMas;
+        private RadioButton rbFem;
+        private DateTimePicker dtpFechaNac;
+        private Label lblFechaNac;
+        private Label lblPeso;
+        private TextBox textBox1;
+        private TextBox txtApellido;
+        private TextBox txtNombre;
+        private Label lblCedula;
+        private Label lblApellido;
+        private Label lblNombre;
+        private TabPage tabPage2;
+        private Label label7;
+        private Label Id_Mo;
+        private Label RH_Mo;
+        private ComboBox cmb_RH;
+        private Label lblGrupoSang;
+        private ComboBox cmbGrupoSang;
+        private Label lblCentroDonación;
+        private TextBox txtCentroDonacion;
+        private ComboBox cmbBuscar;
+        private Label lblBusMod;
+        private Label lblId2;
+        private OpenFileDialog ofp;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

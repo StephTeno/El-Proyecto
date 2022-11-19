@@ -142,18 +142,11 @@
 
         public Donante buscarDatosDonante(string idDonante, List<Donante> a)
         {
-            //Transformamos el arrayList a un tipo que implemente linQ
-            //var clientela = baseDeDatosCliente.OfType<cliente>();
-
-            //Usamos LinQ
+            //Utilizamos linq para buscar algún donante
             var buscCliente = from e in a
-                              where e.Id_Donante == idDonante
+                              where e.Id_Donante.Equals(idDonante)
                               select e;
             Donante pepe = buscCliente.First();
-            //foreach(cliente a in buscCliente)
-            //{
-            //    pepe = 
-            //}
             return pepe;
         }
         
