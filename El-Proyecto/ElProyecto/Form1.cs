@@ -3,6 +3,7 @@ namespace ElProyecto
 {
     public partial class Form1 : Form
     {
+        bool comprobar;
         static int darId = 1;
         Contrl contr = new Contrl();
         static int i, o;
@@ -294,22 +295,31 @@ namespace ElProyecto
         
         private void btnAcep_Click(object sender, EventArgs e)
         {
-            lbl_Id.Text= darId.ToString();
-            contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro,dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids,listaGruposSanguineos, listaRhs,listaCentrosDeDonación,listaPesos);
-            darId++;
+            comprobar = verificarVacios(txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro, errororsito);
+            if (comprobar)
+            {
+                BorrarErrorAgregar(txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro, errororsito);
+                lbl_Id.Text = darId.ToString();
+                contr.agregarDatos(lbl_Id, txtNom, txtApe, mtxtCed, dateTimePicker1, rbtnFemenino, rbtnMasculino, mtxtPe, cmbRh, cmbGrupo, txtCentro, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos);
+                darId++;
+            }
+            
         }
 
         private void btnHecho_Click(object sender, EventArgs e)
         {
-
-            int busqueda=Convert.ToInt32(txtABuscar.Text)-1;
-            lblId2.Text = busqueda+1.ToString();
-            contr.RemoverContacto(busqueda, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos,imglFoos);
-
-            contr.agregarDatos(lblId2, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos);
-            //contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
-            //contr.buscarDonante(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes);
-         lblId2.Visible = true;
+            comprobar = verificarVacios(txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, errororsito);
+            if (comprobar)
+            {
+                BorrarErrorAgregar(txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, errororsito);
+                int busqueda = Convert.ToInt32(txtABuscar.Text) - 1;
+                lblId2.Text = busqueda + 1.ToString();
+                contr.RemoverContacto(busqueda, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos, imglFoos);
+                contr.agregarDatos(lblId2, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo, listaNombres, listaApellidos, Listaids, listaGruposSanguineos, listaRhs, listaCentrosDeDonación, listaPesos);
+                //contr.Modificar(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes, dgvGrupoSanguineo);
+                //contr.buscarDonante(txtABuscar, txtNombre, txtApellido, mtxtCedula, dtpFechaNac, rbFem, rbMas, mtxtPeso, cmb_RH, cmbGrupoSang, txtCentroDonacion, dgvVerDonantes);
+                lblId2.Visible = true;
+            }
          }
 
         private void plRegistrarDonante_Paint(object sender, PaintEventArgs e) { }
@@ -506,5 +516,69 @@ namespace ElProyecto
         }
 
         Func<string> GeneraNumero = () => { o++; return o.ToString("000-000"); };
+        public bool verificarVacios(TextBox txtNom, TextBox txtApe, MaskedTextBox mtxtCed, DateTimePicker dateTimePicker1,RadioButton rbtnFemenino,RadioButton rbtnMasculino,MaskedTextBox mtxtPe,ComboBox cmbRh,ComboBox cmbGrupo,TextBox txtCentro,ErrorProvider errororsito)
+        {
+            bool i = true;
+            if (txtNom.Text == null)
+            {
+                i = false;
+                errororsito.SetError(txtNom, "Agregue los datos porfavor");
+                txtNom.Focus();
+            }
+            if(txtApe.Text == null)
+            {
+                i = false;
+                errororsito.SetError(txtApe, "Agregue los datos porfavor");
+                txtApe.Focus();
+            }
+            if (mtxtCed.Text == null)
+            {
+                i = false;
+                errororsito.SetError(mtxtCed, "Agregue los datos porfavor");
+                mtxtCed.Focus();
+            }
+            if (mtxtPe.Text == null)
+            {
+                i = false;
+                errororsito.SetError(mtxtPe, "Agregue los datos porfavor");
+                mtxtPe.Focus();
+            }
+            if (cmbRh.Text == null)
+            {
+                i = false;
+                errororsito.SetError(cmbRh, "Agregue los datos porfavor");
+                cmbRh.Focus();
+            }
+            if (cmbGrupo.Text == null)
+            {
+                i = false;
+                errororsito.SetError(cmbGrupo, "Agregue los datos porfavor");
+                cmbGrupo.Focus();
+            }
+            if (txtCentro.Text == null)
+            {
+                i = false;
+                errororsito.SetError(txtCentro, "Agregue los datos porfavor");
+                txtCentro.Focus();
+            }
+            return i;
+        }
+
+        private void btnCance_Click(object sender, EventArgs e)
+        {
+            Inicio();
+        }
+
+        public void BorrarErrorAgregar(TextBox txtNom, TextBox txtApe, MaskedTextBox mtxtCed, DateTimePicker dateTimePicker1, RadioButton rbtnFemenino, RadioButton rbtnMasculino, MaskedTextBox mtxtPe, ComboBox cmbRh, ComboBox cmbGrupo, TextBox txtCentro, ErrorProvider errororsito)
+        {
+            errororsito.SetError(txtNom, "");
+            errororsito.SetError(txtApe, "");
+            errororsito.SetError(mtxtPe, "");
+            errororsito.SetError(mtxtCed, "");
+            errororsito.SetError(cmbRh, "");
+            errororsito.SetError(cmbGrupo, "");
+            errororsito.SetError(txtCentro, "");
+
+        }
     }
 }

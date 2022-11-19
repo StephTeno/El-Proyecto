@@ -183,6 +183,7 @@
             this.plQuienesSomos = new System.Windows.Forms.Panel();
             this.ofp = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.errororsito = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.plVerGrupoSanguineo.SuspendLayout();
@@ -207,6 +208,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tsHerramientas.SuspendLayout();
             this.plQuienesSomos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errororsito)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -356,7 +358,7 @@
             this.plVerGrupoSanguineo.Controls.Add(this.dgvGrupoSanguineo);
             this.plVerGrupoSanguineo.Controls.Add(this.lblVerGrupoSanguineo);
             this.plVerGrupoSanguineo.ForeColor = System.Drawing.Color.Black;
-            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(252, 410);
+            this.plVerGrupoSanguineo.Location = new System.Drawing.Point(305, 410);
             this.plVerGrupoSanguineo.Name = "plVerGrupoSanguineo";
             this.plVerGrupoSanguineo.Size = new System.Drawing.Size(20, 20);
             this.plVerGrupoSanguineo.TabIndex = 11;
@@ -419,7 +421,7 @@
             this.plVerDonantes.Controls.Add(this.dgvVerDonantes);
             this.plVerDonantes.Controls.Add(this.lblVerDonantes);
             this.plVerDonantes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.plVerDonantes.Location = new System.Drawing.Point(202, 410);
+            this.plVerDonantes.Location = new System.Drawing.Point(279, 410);
             this.plVerDonantes.Name = "plVerDonantes";
             this.plVerDonantes.Size = new System.Drawing.Size(20, 20);
             this.plVerDonantes.TabIndex = 10;
@@ -518,7 +520,7 @@
             this.plModificarDatos.Controls.Add(this.cmbBuscar);
             this.plModificarDatos.Controls.Add(this.lblBusMod);
             this.plModificarDatos.Controls.Add(this.lblModificar);
-            this.plModificarDatos.Location = new System.Drawing.Point(304, 410);
+            this.plModificarDatos.Location = new System.Drawing.Point(228, 410);
             this.plModificarDatos.Name = "plModificarDatos";
             this.plModificarDatos.Size = new System.Drawing.Size(20, 20);
             this.plModificarDatos.TabIndex = 6;
@@ -948,7 +950,7 @@
             this.plConsultarDonante.Controls.Add(this.lbResultado);
             this.plConsultarDonante.Controls.Add(this.gbConsultar);
             this.plConsultarDonante.Controls.Add(this.lblConsultarDonante);
-            this.plConsultarDonante.Location = new System.Drawing.Point(228, 410);
+            this.plConsultarDonante.Location = new System.Drawing.Point(254, 410);
             this.plConsultarDonante.Name = "plConsultarDonante";
             this.plConsultarDonante.Size = new System.Drawing.Size(20, 20);
             this.plConsultarDonante.TabIndex = 6;
@@ -1095,7 +1097,7 @@
             this.plRegistrarDonante.Controls.Add(this.btnAcep);
             this.plRegistrarDonante.Controls.Add(this.tcInformacion);
             this.plRegistrarDonante.Controls.Add(this.lblRegistro);
-            this.plRegistrarDonante.Location = new System.Drawing.Point(278, 410);
+            this.plRegistrarDonante.Location = new System.Drawing.Point(202, 410);
             this.plRegistrarDonante.Name = "plRegistrarDonante";
             this.plRegistrarDonante.Size = new System.Drawing.Size(20, 20);
             this.plRegistrarDonante.TabIndex = 1;
@@ -1121,6 +1123,7 @@
             this.btnCance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCance.UseVisualStyleBackColor = false;
+            this.btnCance.Click += new System.EventHandler(this.btnCance_Click);
             // 
             // btnAcep
             // 
@@ -1868,12 +1871,16 @@
             // 
             this.ofp.FileName = "openFileDialog1";
             // 
+            // errororsito
+            // 
+            this.errororsito.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(763, 408);
+            this.ClientSize = new System.Drawing.Size(764, 410);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1927,6 +1934,7 @@
             this.tsHerramientas.ResumeLayout(false);
             this.tsHerramientas.PerformLayout();
             this.plQuienesSomos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errororsito)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2072,5 +2080,6 @@
         private Label lblId2;
         private OpenFileDialog ofp;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private ErrorProvider errororsito;
     }
 }
