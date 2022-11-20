@@ -53,8 +53,8 @@
             this.dgvGrupoSanguineo = new System.Windows.Forms.DataGridView();
             this.GSNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GSApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GSRH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GSGrupoSanguino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GSRH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblVerGrupoSanguineo = new System.Windows.Forms.Label();
             this.plVerDonantes = new System.Windows.Forms.Panel();
             this.dgvVerDonantes = new System.Windows.Forms.DataGridView();
@@ -369,8 +369,8 @@
             this.dgvGrupoSanguineo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.GSNombre,
             this.GSApellido,
-            this.GSRH,
-            this.GSGrupoSanguino});
+            this.GSGrupoSanguino,
+            this.GSRH});
             this.dgvGrupoSanguineo.Location = new System.Drawing.Point(29, 50);
             this.dgvGrupoSanguineo.Name = "dgvGrupoSanguineo";
             this.dgvGrupoSanguineo.RowTemplate.Height = 25;
@@ -391,17 +391,17 @@
             this.GSApellido.ReadOnly = true;
             this.GSApellido.Width = 147;
             // 
-            // GSRH
-            // 
-            this.GSRH.HeaderText = "RH";
-            this.GSRH.Name = "GSRH";
-            this.GSRH.ReadOnly = true;
-            // 
             // GSGrupoSanguino
             // 
             this.GSGrupoSanguino.HeaderText = "Grupo Sanguineo";
             this.GSGrupoSanguino.Name = "GSGrupoSanguino";
             this.GSGrupoSanguino.ReadOnly = true;
+            // 
+            // GSRH
+            // 
+            this.GSRH.HeaderText = "RH";
+            this.GSRH.Name = "GSRH";
+            this.GSRH.ReadOnly = true;
             // 
             // lblVerGrupoSanguineo
             // 
@@ -1880,7 +1880,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(764, 410);
+            this.ClientSize = new System.Drawing.Size(761, 417);
             this.Controls.Add(this.plQuienesSomos);
             this.Controls.Add(this.plVerGrupoSanguineo);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -2033,10 +2033,6 @@
         private DataGridViewTextBoxColumn GrupoSanguineo;
         private DataGridViewTextBoxColumn RH;
         private DataGridViewTextBoxColumn CentrodeDonacion;
-        private DataGridViewTextBoxColumn GSNombre;
-        private DataGridViewTextBoxColumn GSApellido;
-        private DataGridViewTextBoxColumn GSRH;
-        private DataGridViewTextBoxColumn GSGrupoSanguino;
         private CheckBox cbNombre;
         private CheckBox cbPeso;
         private CheckBox cbCentroDonacion;
@@ -2081,5 +2077,9 @@
         private OpenFileDialog ofp;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private ErrorProvider errororsito;
+        private DataGridViewTextBoxColumn GSNombre;
+        private DataGridViewTextBoxColumn GSApellido;
+        private DataGridViewTextBoxColumn GSGrupoSanguino;
+        private DataGridViewTextBoxColumn GSRH;
     }
 }
